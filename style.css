@@ -1,6 +1,6 @@
-body{
+ body{
 margin:0;
-font-size:1.1VW;
+font-size:16px;
 font-family:Arial, Verdana, Sans-serif;
 color:#212121;
 width:100%;
@@ -8,25 +8,22 @@ height:100%;
 }
 h1{
 padding-top:116px;
-font-size:5.0VW;
+font-size:3.75em;
 text-align: left;
 text-transform:uppercase; 
 }
 h2{
-padding-bottom:45px;
-font-size:2.0VW;
+font-size:1.875em;
 text-align: left;
 text-transform:uppercase; 
-text-decoration: underline;
 width:100%;
-color:#c62727;
 }
 h3{
-font-size:1.4VW;
+font-size:1.25em;
 text-transform:uppercase; 
 }
 h4{
-font-size:1.1VW;
+font-size:16px;
 text-transform:capitalize;
 }
 p{
@@ -66,6 +63,7 @@ width:100%;
 margin:0px;
 margin-bottom:40px;
 padding:0;
+
 }
 header{
 padding-left:10%;
@@ -80,6 +78,14 @@ padding-left:10%;
 padding-right:5%;
 padding-bottom:77px;
 }
+div.icon_side span{
+border-radius: 100%;
+border:solid 2px #424242;
+font-size:3.75em;
+color:#424242;
+padding:13px;
+margin:10px;
+}
 }
 @media screen and (max-width: 991px) {
 .cv div {
@@ -88,6 +94,7 @@ padding-bottom:77px;
 aside {
 	display: block;
 	width: 100%;
+	height: 100%;
 }
 .main{
 	display: block;
@@ -112,13 +119,20 @@ padding-left:10%;
 padding-right:5%;
 padding-bottom:77px;
 }
+div.icon_side span{
+border-radius: 100%;
+border:solid 2px #424242;
+font-size:1.75em;
+color:#424242;
+padding:13px;
+margin:2px;
 }
-/*bande de couleur suite */
+}
+/*bande de couleur */
 img.photo {
 display: block;
 margin-top:56px;
-width:214px;
-height:214px;
+height:13%;
 border-radius: 100%;
 border:solid 5px #b71c1c;
 }
@@ -149,6 +163,10 @@ width:100%;
 margin:0px;
 padding:0;
 }
+div.icon_side{
+text-align:center;
+}
+
 /* entête */
 .firstname{
 color:#c62727;
@@ -166,24 +184,47 @@ text-decoration: underline;
 text-decoration-color:#c62727;
 text-underline-position: under;
 }
+h2 span.deve{
+padding-right:0;
+}
 /* corps */
 
 section {
 padding-left:10%;
 padding-right:5%;
 }
-table {
-padding-bottom:75px;
+div.title{
+border-bottom: 2px solid #c62727;
+margin-bottom:3%;
+padding-bottom:1%;
 }
+h2 span{
+font-size:1em;
+color:#c62727;
+padding-right:5%;
+}
+table {
+padding-bottom:4%;
+}
+
 .icon{
 width:1%;
+color:#c62727;
 }
 
 .date {
 width:34%;
+text-transform:capitalize;
 }
 .desc {
 width:65%;
+padding-bottom:3%;
+padding-top:1%;
+}
+h4.work{
+text-transform:capitalize;
+padding-top:1%;
+padding-bottom:1%;
 }
 /* pied de page */
 footer h4 {
