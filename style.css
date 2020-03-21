@@ -60,7 +60,9 @@ position:absolute;
 bottom:0;
 width:100%;
 height:11%;
-padding-bottom:2%;
+padding:0;
+padding-top:10%;
+margin-bottom:2%;
 }
 footer {
 display: inline-block;
@@ -74,11 +76,10 @@ padding-bottom:4%;
 }
 @media screen and (max-width: 991px) {
 aside {
-	display: block;
 	width: 100%;
+	padding-bottom:10px;
 }
 .main{
-	display: block;
 	width: 100%;
 }
 .hobby{
@@ -87,6 +88,7 @@ bottom:auto;
 width:100%;
 height:11%;
 padding:0;
+padding-top:10%;
 margin-bottom:2%;
 }
 footer {
@@ -103,8 +105,8 @@ display: block;
 height:20%;
 margin:auto;
 margin-top:4%;
-margin-bottom:1%;
-height:13%;
+margin-bottom:2%;
+height:12%;
 border-radius: 100%;
 border:solid 5px #b71c1c;
 }
@@ -113,9 +115,9 @@ width:100%;
 background-color:#424242;
 text-align: center;
 color:#c62727;
-margin-top:1%;
+margin-top:2%;
 margin:auto;
-margin-bottom:2%;
+margin-bottom:5%;
 padding: 5px 0px 5px 0px;
 }
 p.sidebar{
@@ -143,9 +145,11 @@ text-align:center;
 div.icon_side span{
 border-radius: 100%;
 border:solid 2px #424242;
-font-size:3.75em;
+font-size:1.875em;
 color:#424242;
 padding:13px;
+margin-left:15px;
+margin-right:15px;
 }
 /* entête */
 header{
@@ -188,7 +192,7 @@ color:#c62727;
 padding-right:5%;
 }
 table {
-padding-bottom:4%;
+padding-bottom:7%;
 }
 
 .icon_first{
@@ -210,7 +214,7 @@ vertical-align: top;
 }
 .desc {
 width:65%;
-padding-bottom:3%;
+padding-bottom:5%;
 padding-top:1%;
 }
 h4.work{
