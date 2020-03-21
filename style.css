@@ -7,7 +7,7 @@ width:100%;
 height:100%;
 }
 h1{
-padding-top:116px;
+padding-top:7%;
 font-size:3.75em;
 text-align: left;
 text-transform:uppercase; 
@@ -24,7 +24,6 @@ text-transform:uppercase;
 }
 h4{
 font-size:16px;
-text-transform:capitalize;
 }
 p{
 text-align:left;
@@ -36,7 +35,7 @@ text-align:left;
 
 aside {
 	background-color:#c62727;
-margin: 0;
+
 }
 /* Media queries */
 @media screen and (min-width: 992px) {
@@ -60,41 +59,23 @@ display: inline-block;
 position:absolute; 
 bottom:0;
 width:100%;
-margin:0px;
-margin-bottom:40px;
-padding:0;
-
-}
-header{
-padding-left:10%;
-padding-right:5%;
+height:11%;
+padding-bottom:2%;
 }
 footer {
 display: inline-block;
 position:absolute; 
-bottom:0px;
+bottom:0;
 width:100%;
 padding-left:10%;
 padding-right:5%;
-padding-bottom:77px;
-}
-div.icon_side span{
-border-radius: 100%;
-border:solid 2px #424242;
-font-size:3.75em;
-color:#424242;
-padding:13px;
-margin:10px;
+padding-bottom:4%;
 }
 }
 @media screen and (max-width: 991px) {
-.cv div {
-	height: auto;
-}
 aside {
 	display: block;
 	width: 100%;
-	height: 100%;
 }
 .main{
 	display: block;
@@ -104,34 +85,25 @@ aside {
 position:relative; 
 bottom:auto;
 width:100%;
-margin:0px;
+height:11%;
 padding:0;
-margin-bottom:40px;
-}
-header{
-padding-left:1%;
-padding-right:1%;
+margin-bottom:2%;
 }
 footer {
 position:relative; 
 bottom:auto;
 padding-left:10%;
 padding-right:5%;
-padding-bottom:77px;
-}
-div.icon_side span{
-border-radius: 100%;
-border:solid 2px #424242;
-font-size:1.75em;
-color:#424242;
-padding:13px;
-margin:2px;
+padding-bottom:4%;
 }
 }
 /*bande de couleur */
 img.photo {
 display: block;
-margin-top:56px;
+height:20%;
+margin:auto;
+margin-top:4%;
+margin-bottom:1%;
 height:13%;
 border-radius: 100%;
 border:solid 5px #b71c1c;
@@ -141,38 +113,50 @@ width:100%;
 background-color:#424242;
 text-align: center;
 color:#c62727;
-text-decoration: none;
-margin-top:40px;
-margin-bottom:35px;
-padding:5px;
+margin-top:1%;
+margin:auto;
+margin-bottom:2%;
+padding: 5px 0px 5px 0px;
 }
 p.sidebar{
 line-height: 150%;
 text-align:justify;
 padding-left:15%;
 padding-right:15%;
-padding-bottom:10px;
+padding-bottom:1%;
 }
 .contact{
 width:100%;
+height:23%;
 margin:0px;
 padding:0;
 }
 .aboutme{
 width:100%;
+height:46%;
 margin:0px;
 padding:0;
 }
 div.icon_side{
 text-align:center;
 }
-
+div.icon_side span{
+border-radius: 100%;
+border:solid 2px #424242;
+font-size:3.75em;
+color:#424242;
+padding:13px;
+}
 /* entête */
+header{
+padding-left:10%;
+padding-right:5%;
+}
 .firstname{
 color:#c62727;
 }
 h2.header{
-padding-bottom:130px;
+padding-bottom:7%;
 text-align: left;
 text-transform:capitalize;
 text-decoration: none;
@@ -207,14 +191,22 @@ table {
 padding-bottom:4%;
 }
 
-.icon{
+.icon_first{
 width:1%;
 color:#c62727;
+vertical-align: top;
 }
 
+.icon{
+width:1%;
+font-size:10px;
+color:#c62727;
+vertical-align: top;
+}
 .date {
 width:34%;
 text-transform:capitalize;
+vertical-align: top;
 }
 .desc {
 width:65%;
@@ -222,13 +214,15 @@ padding-bottom:3%;
 padding-top:1%;
 }
 h4.work{
+font-weight: normal;
 text-transform:capitalize;
 padding-top:1%;
 padding-bottom:1%;
 }
 /* pied de page */
-footer h4 {
+h4.footer {
 text-transform:uppercase; 
+padding-bottom:1%;
 }
 ul {
   list-style-type: none;
