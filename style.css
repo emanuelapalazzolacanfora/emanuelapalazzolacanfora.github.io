@@ -177,7 +177,6 @@ font-size:1.25em;
 }
 aside {
 	display:block;
-	height:1684px;
 	display: inline-block;
 	width: 32%;
 	float:left;
@@ -186,7 +185,6 @@ padding-top:8px;
 }
 .main{
 	display:block;
-	height:1684px;
 	display: inline-block;
 	width: 68%;
 position:relative;
@@ -246,7 +244,6 @@ font-size:1.25em;
 }
 aside {
 	display:block;
-	height:1684px;
 	display: inline-block;
 	width: 32%;
 	float:left;
@@ -255,7 +252,6 @@ padding-top:8px;
 }
 .main{
 	display:block;
-	height:1684px;
 	display: inline-block;
 	width: 68%;
 position:relative;
