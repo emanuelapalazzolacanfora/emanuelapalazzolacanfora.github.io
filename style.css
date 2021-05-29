@@ -247,14 +247,12 @@ aside {
 	display: inline-block;
 	width: 32%;
 	float:left;
-position:relative;
 padding-top:8px;
 }
 .main{
 	display:block;
 	display: inline-block;
 	width: 68%;
-position:relative;
 }
 p.sidebar{
 line-height: 150%;
@@ -264,8 +262,6 @@ padding-right:15%;
 padding-bottom:1%;
 }
 .hobby{
-display: inline-block;
-position:absolute; 
 bottom:0;
 width:100%;
 height:11%;
@@ -278,9 +274,6 @@ padding-left:10%;
 padding-right:5%;
 }
 footer {
-display: inline-block;
-position:absolute; 
-bottom:0;
 width:100%;
 padding-left:10%;
 padding-right:5%;
@@ -325,7 +318,6 @@ padding-right:8%;
 padding-bottom:1%;
 }
 .hobby{
-position:relative; 
 bottom:auto;
 width:100%;
 height:11%;
@@ -338,7 +330,6 @@ padding-left:1%;
 padding-right:1%;
 }
 footer {
-position:relative; 
 bottom:auto;
 padding-left:10%;
 padding-right:5%;
