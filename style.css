@@ -18,7 +18,7 @@ text-align:left;
 }
 
 aside {
-	background-color:#984456;
+	background-color:#F0F0F0;
 	color:#F6D1C4;
 
 }
@@ -411,7 +411,7 @@ padding-top:2%;
 }
 div.icon_side span{
 border-radius: 100%;
-border:solid 2px #424242;
+border:solid 2px #F0F0F0;
 font-size:1.875em;
 color:#424242;
 padding:13px;
@@ -420,19 +420,19 @@ margin-right:15px;
 }
 /* entête */
 .firstname{
-color:#c62727;
+color:#984456;
 }
 h2.header{
 padding-bottom:7%;
 text-align: left;
 text-transform:capitalize;
 text-decoration: none;
-color:#212121;
+color:#984456;
 }
 .deve{
-color:#212121;
+color:#984456;
 text-decoration: underline;
-text-decoration-color:#c62727;
+text-decoration-color:#984456;
 text-underline-position: under;
 }
 h2 span.deve{
@@ -445,13 +445,13 @@ padding-left:10%;
 padding-right:5%;
 }
 div.title{
-border-bottom: 2px solid #c62727;
+border-bottom: 2px solid #984456;
 margin-bottom:3%;
 padding-bottom:1%;
 }
 h2 span{
 font-size:1em;
-color:#c62727;
+color:#984456;
 padding-right:5%;
 }
 table {
@@ -460,14 +460,14 @@ padding-bottom:7%;
 
 .icon_first{
 width:1%;
-color:#c62727;
+color:#984456;
 vertical-align: top;
 }
 
 .icon{
 width:1%;
 font-size:10px;
-color:#c62727;
+color:#984456;
 vertical-align: top;
 }
 .date {
