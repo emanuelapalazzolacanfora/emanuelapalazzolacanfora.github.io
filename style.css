@@ -18,7 +18,8 @@ text-align:left;
 }
 
 aside {
-	background-color:#c62727;
+	background-color:#984456;
+	color:#F0F0F0;
 
 }
 /* Media queries */
@@ -384,9 +385,9 @@ border:solid 5px #b71c1c;
 }
 h2.framed{
 width:100%;
-background-color:#424242;
+background-color:#F6D1C4;
 text-align: center;
-color:#c62727;
+color:#984456;
 margin-top:2%;
 margin:auto;
 margin-bottom:5%;
