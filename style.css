@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@emanuelapalazzolacanfora 
+emanuelapalazzolacanfora
+/
+emanuelapalazzolacanfora.github.io
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+emanuelapalazzolacanfora.github.io/style.css
+@emanuelapalazzolacanfora
+emanuelapalazzolacanfora Add files via upload
+Latest commit 5678699 3 minutes ago
+ History
+ 1 contributor
+495 lines (482 sloc)  6.85 KB
+  
  body{
 margin:0;
 font-size:16px;
@@ -18,8 +49,7 @@ text-align:left;
 }
 
 aside {
-	background-color:#984456;
-	color:#F0F0F0;
+	background-color:#c62727;
 
 }
 /* Media queries */
@@ -385,9 +415,9 @@ border:solid 5px #b71c1c;
 }
 h2.framed{
 width:100%;
-background-color:#F6D1C4;
+background-color:#424242;
 text-align: center;
-color:#984456;
+color:#c62727;
 margin-top:2%;
 margin:auto;
 margin-bottom:5%;
