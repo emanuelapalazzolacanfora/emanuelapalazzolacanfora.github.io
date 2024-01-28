@@ -69,6 +69,7 @@ section#mindset, footer {
   background-color: var(--secondary-color-dark);
 }
 
+.content__header,
 .nav__header,
 .nav__header ul,
 .nav__skillset ul,
@@ -81,9 +82,13 @@ section#mindset, footer {
   gap: var(--basic-size);
 }
 
-.nav__header, .content__footer {
-  margin: auto;
+.content__header{
+  justify-content: space-evenly;
   padding: 2rem 0;
+}
+
+.content__header,.nav__header, .content__footer {
+  margin: auto;
   max-width: var(--max-width);
 }
 
@@ -92,16 +97,12 @@ h1 {
   font-weight: 700;
 }
 
-.nav__header li:first-of-type {
-  padding-right: 7rem;
-}
-
 .nav__header a {
   transition: 0.3s;
 }
 
 .nav__header a:hover {
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
 }
 
 .nav__header .btn a {
@@ -331,9 +332,13 @@ img, video {
 
 /* RELATIVES */
 
-.card__relatives {
+.card__post {
   margin-bottom: 1rem;
   border-radius: 5px;
+}
+
+.card__post h4{
+  color: var(--primary-color);
 }
 
 /* FOOTER */
