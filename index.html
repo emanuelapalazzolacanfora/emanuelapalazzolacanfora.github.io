@@ -2,389 +2,275 @@
 <html lang="fr-FR" itemscope itemtype="http://schema.org/WebPage" rel="profile" href="http://gmpg.org/xfn/11">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>DevelopeuseWebDesigner | Emanuela</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevelopeuseWebDesigner | Emanuela</title>
+    <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__socials">
-      <a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i class="ri-github-fill"></i></a>
-      <a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-      <a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i class="ri-instagram-fill"></i></a>
-      <a href="#"><i class="ri-mail-fill"></i></a>
-    </div>
-    <nav class="nav">
-      <div class="nav__bar">
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">emanuela palazzo lacanfora</a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <span><i class="ri-menu-3-line"></i></span>
-          </div>
-        </div>
-        <ol class="nav__links" id="nav-links">
-          <li class="link menu-item"><a href="#home">Home</a></li>
-          <li class="link menu-item"><a href="#about">Qui suis-je?</a></li>
-          <li class="link menu-item"><a href="#project">Portfolio</a>
-            <ol class="sub-menu">
-              <li class="menu-item"><a href="#type1">Type1</a></li>
-              <li class="menu-item"><a href="#type2">Type2</a></li>
-              <li class="menu-item"><a href="#type3">Type 3</a></li>
-            </ol>
-          </li>
-          <li class="link menu-item"><a href="#service">Services</a></li>
-          <li class="link menu-item"><a href="#client">Témoignages</a></li>
-          <li class="link menu-item"><a href="#relative">En lien</a></li>
-          <li class="link btn menu-item"><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank">Contactez moi</a></li>
-        </ol>
-      </div>
-    </nav>
-    <div class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="assets/header2.png" alt="header" />
-      </div>
-      <div class="header__content">
-+        <h1>Bonjour, Je suis Emanuela.</h1>
-        <p>
-          Je suis une Web développeuse dévouée avec un flair créatif et un penchant
-          pour transformer des lignes de code en expériences en ligne captivantes.
-          Mon voyage dans le domaine numérique a commencé il y a des années, et depuis, j'ai perfectionné
-          mes compétences en développement front-end et back-end.
-        </p>
-        <imput button class="link btn menu-item"><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank">Travaillez avec moi </a></imput>
-      </div>
-    </div>
-  </header>
+    <!-- Voici notre en‑tête principale utilisée dans toutes les pages de notre site web -->
+    <header>
 
-  <section class="section__container about__container" id="about">
-    <div class="about__image">
-      <img src="assets/header.png" alt="about" />
-    </div>
-    <div class="about__content">
-      <h2 class="section__header">Bonjour, Je suis Emanuela.</h2>
-      <p>
-        Une Web développeuse passionnée avec un flair créatif et un don pour
-        transformer les visions en réalité. Mon parcours dans le développement Web a commencé avec
-        une fascination pour le codage et le design, et cela a évolué vers une carrière
-        où je mélange l'esthétique avec la fonctionnalité.
-      </p>
-      <h4>
-        Mettant l'accent sur l'expérience utilisateur et l'engagement de rester à jour
-        avec les dernières tendances de l'industrie. Je me consacre à la création de sites Web
-        qui non seulement répondent, mais aussi dépassent les attentes.
-      </h4>
-      <div class="about__btns">
-        <a href="https://emanuelapalazzolacanfora.github.io" class="download__btn">
-          Mon CV
-        </a>
-        <a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i class="ri-github-fill"></i></a>
-      <a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-        <a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i class="ri-instagram-fill"></i></a>
-        <a href="#"><i class="ri-mail-fill"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section__container banner__container">
-    <div class="banner__card">
-      <span><i class="ri-pen-nib-line"></i></span>
-      <div>
-        <h4>Design</h4>
-        <p>
-          Un engagement pour vous offrir un contenu numérique engageant. Une approche collaborative, encourageant vos
-          commentaires tout au long du processus de conception pour vous garantir que nous répondons à vos attentes.
-        </p>
-      </div>
-    </div>
-    <div class="banner__card">
-      <span><i class="ri-layout-masonry-line"></i></span>
-      <div>
-        <h4>Développement</h4>
-        <p>
-          Une veille technologique permetant d'être à la pointe des avancées technologiques, vous garantissant une
-          présence numérique performante.
-        </p>
-      </div>
-    </div>
-    <div class="banner__card">
-      <span><i class="ri-checkbox-line"></i></span>
-      <div>
-        <h4>Teste & QA</h4>
-        <p>
-          Votre présence numérique ne doit pas seulement être belle,
-          elle doit aussi générer du trafic et de l'engagement.
-      </div>
-    </div>
-  </section>
-
-  <section class="section__container project__container" id="project">
-    <div class="project__header">
-      <h2 class="section__header">Mes Projets</h2>
-      <div class="project__nav">
-        <button class="btn project__btn mixitup-control-active" data-filter="all">
-          Tous
-        </button>
-        <button class="btn project__btn" data-filter=".web">Web Apps</button>
-        <button class="btn project__btn" data-filter=".content">Content creator</button>
-        <button class="btn project__btn" data-filter=".design">
-          Designs
-        </button>
-      </div>
-    </div>
-    <div class="project__grid">
-      <div class="project__card mix web">
-        <div class="service__card"></div>
-      </div>
-      <div class="project__card mix content">
-        <div class="service__card"></div>
-      </div>
-      <div class="project__card mix design">
-        <div class="service__card"></div>
-      </div>
-      <div class="project__card mix web">
-        <div class="service__card"></div>
-      </div>
-      <div class="project__card mix content">
-        <div class="service__card"></div>
-      </div>
-      <div class="project__card mix design">
-        <div class="service__card"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section__container service__container" id="service">
-    <p class="section__subheader">Mes Services</p>
-    <h2 class="section__header">Qu'est ce que je fais?</h2>
-    <p class="section__description">
-      Spécialisée dans une large gamme de services de développement Web conçus pour
-      transformez votre vision en réalité.
-    </p>
-    <div class="service__grid">
-      <div class="service__card">
-        <span><i class="ri-code-s-slash-line"></i></span>
-        <h4>Web Development</h4>
-        <p>
-          Dernières technologies Web et outils de développement pour créer des sites Web rapides, sécurisés et
-          évolutifs.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-smartphone-line"></i></span>
-        <h4>Mobile first</h4>
-        <p>
-          Un Web Design optimisé pour mobile est un impératif pour attirer des clients. En effet, la consultation des sites web avec un mobile est toujours en croissance.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-seo-line"></i></span>
-        <h4>SEO</h4>
-        <p>
-          Stratégies SEO sont adaptées à vos objectifs spécifiques, vous aidant
-          à atteindre votre public cible et à développez votre présence en ligne.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-window-fill"></i></span>
-        <h4>Website Design</h4>
-        <p>
-          Interfaces conviviales qui engagent les visiteurs et vous aident
-          atteignez vos objectifs en ligne avec un minimum d'efforts.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-survey-line"></i></span>
-        <h4>Audit SEO</h4>
-        <p>
-          Augmentez le trafic de votre site grâce au référencement naturel (SEO). Améliorez le référencement d'un site en agissant sur sa crawlabilité et sa vitesse.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-share-fill"></i></span>
-        <h4>Content Marketing</h4>
-        <p>
-          Mes services incluent la création d'articles de blog, de vidéos et de contenu sur les réseaux sociaux qui
-          génèrent du trafic et de l'engagement.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section__container client__container" id="client">
-    <p class="section__subheader">Temoignages</p>
-    <h2 class="section__header">Ce que mes clients disent de moi.</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="client__card">
-            <img src="assets/client-1.jpg" alt="client" />
-            <div>
-              <p>
-                They transformed our online presence with their SEO and
-                content marketing services. Our website now ranks higher in
-                search results, and the quality of leads has improved
-                substantially. I highly recommend their digital marketing
-                expertise.
-              </p>
-              <h4>John Miller <span>CEO, Corporation</span></h4>
-              <div class="client__ratings">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-half-fill"></i></span>
-                <span><i class="ri-star-line"></i></span>
-              </div>
+        <nav class="nav__header">
+            <ul>
+                <li>
+                    <h1>emanuela palazzo lacanfora</h1>
+                </li>
+                <li><a href="#mindset">Accueil</a></li>
+                <li><a href="#skillset">Qui suis-je?</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#relatives">En lien</a></li>
+                <li class="btn"><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank">Contactez moi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
+        <section id="mindset">
+            <nav class="nav__socials">
+                <li><a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" class="social" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="social" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            </nav>
+            <div class="content__mindset">
+                <div class="content__introduction">
+                    <h2>Bonjour</h2>
+                    <p>
+                        Je suis une Web développeuse dévouée avec un flair créatif et un penchant
+                        pour transformer des lignes de code en expériences en ligne captivantes.
+                        Mon voyage dans le domaine numérique a commencé il y a des années, et depuis, j'ai perfectionné
+                        mes compétences en développement front-end et back-end.
+                    </p>
+                    <imput button class="link btn menu-item"><a href="https://wa.me/message/BKIHIHIQSKPDB1"
+                            target="_blank">Travaillez avec moi </a></imput>
+                </div>
+                <img src="assets/header2.png" alt="header" />
             </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <img src="assets/client-2.jpg" alt="client" />
-            <div>
-              <p>
-                Working with them has been a game-changer for our business.
-                Their web development expertise helped us create a sleek and
-                responsive website that has significantly increased our online
-                sales. Their dedication and innovative solutions truly set
-                them apart.
-              </p>
-              <h4>Sarah Thompson <span>Marketing Director</span></h4>
-              <div class="client__ratings">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-line"></i></span>
-              </div>
+        </section>
+        <section id="garanties">
+            <div class="grid__garanties">
+                <div class="card__garanties">
+                    <span><i class="fa-solid fa-paintbrush"></i></span>
+                    <div class="description__garanties">
+                        <h3>Design</h3>
+                        <p>
+                            Un engagement pour vous offrir un contenu numérique engageant. Une approche collaborative,
+                            encourageant vos
+                            commentaires tout au long du processus de conception pour vous garantir que nous répondons à
+                            vos
+                            attentes.
+                        </p>
+                    </div>
+                </div>
+                <div class="card__garanties">
+                    <span><i class="fa-solid fa-code"></i></span>
+                    <div class="description__garanties">
+                        <h3>Développement</h3>
+                        <p>
+                            Une veille technologique permetant d'être à la pointe des avancées technologiques, vous
+                            garantissant une
+                            présence numérique performante.
+                        </p>
+                    </div>
+                </div>
+                <div class="card__garanties">
+                    <span><i class="fa-regular fa-square-check"></i></span>
+                    <div class="description__garanties">
+                        <h3>Teste & QA</h3>
+                        <p>
+                            Votre présence numérique ne doit pas seulement être belle,
+                            elle doit aussi générer du trafic et de l'engagement.
+                    </div>
+                </div>
+        </section>
+        <section id="skillset">
+            <img src="assets/header.png" alt="skillset" />
+            <div class="content__skillset">
+                <h2>Qui suis-je?</h2>
+                <p>
+                    Web développeuse passionnée avec un flair créatif et un don pour
+                    transformer les visions en réalité. Mon parcours dans le développement Web a commencé avec
+                    une fascination pour le codage et le design, et cela a évolué vers une carrière
+                    où je mélange l'esthétique avec la fonctionnalité.
+                </p>
+                <div class="highlight">
+                    Mettant l'accent sur l'expérience utilisateur et l'engagement de rester à jour
+                    avec les dernières tendances de l'industrie. Je me consacre à la création de sites Web
+                    qui non seulement répondent, mais aussi dépassent les attentes.
+                </div>
+                <nav class="nav__skillset">
+                    <ul>
+                        <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" class="btn">
+                                Mon CV
+                            </a>
+                        <li><a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <img src="assets/client-3.jpg" alt="client" />
-            <div>
-              <p>
-                Our digital marketing strategy needed a revamp, and they
-                delivered outstanding results. Their team's creative approach
-                to PPC campaigns and social media advertising has generated a
-                significant increase in our website traffic and conversions.
-              </p>
-              <h4>David Peterson <span>Marketing Manager</span></h4>
-              <div class="client__ratings">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-half-fill"></i></span>
-              </div>
+        </section>
+        <section id="projects">
+            <nav class="nav__projects">
+                <ul>
+                    <li>
+                        <h2>Mes Projets</h2>
+                    </li>
+                    <li><button class="btn btn__projects mixitup-control-active" data-filter="all">Tous</button>
+                    <li><button class="btn btn__projects" data-filter="web">Web Apps</button>
+                    <li><button class="btn btn__projects" data-filter="content">Content creator</button>
+                    <li><button class="btn btn__projects" data-filter="design">Designs</button>
+                </ul>
+            </nav>
+            <div class="grid__projects">
+                <div class="card__projects web" data-item="web">
+                    <img src="assets/project-1.jpg" class="img__projects" alt="project" />
+                </div>
+                <div class="card__projects content" data-item="content">
+                    <img src="assets/project-2.jpg" class="img__projects" alt="project" />
+                </div>
+                <div class="card__projects design" data-item="design">
+                    <img src="assets/project-3.jpg" class="img__projects" alt="project" />
+                </div>
+                <div class="card__projects web" data-item="web">
+                    <img src="assets/project-4.jpg" class="img__projects" alt="project" />
+                </div>
+                <div class="card__projects content" data-item="centent">
+                    <img src="assets/project-1.jpg" class="img__projects" alt="project" />
+                </div>
+                <div class="card__projects mix design" data-item="design">
+                    <img src="assets/project-2.jpg" class="img__projects" alt="project" />
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <img src="assets/client-4.jpg" alt="client" />
-            <div>
-              <p>
-                The mobile app they developed for our company exceeded our
-                expectations. Not only is it user-friendly, but it also helped
-                us connect with our customers on a whole new level. Their
-                attention to detail and commitment to delivering on time were
-                exceptional.
-              </p>
-              <h4>Harrison Rogers <span>Product Manager</span></h4>
-              <div class="client__ratings">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
+        </section>
+        <section id="services">
+            <h2>Mes Services</h2>
+            <h3>Qu'est ce que je fais?</h3>
+            <p class="description">
+                Spécialisée dans une large gamme de services de développement Web conçus pour
+                transformez votre vision en réalité.
+            </p>
+            <div class="grid__services">
+                <div class="card__services">
+                    <span><i class="fa-solid fa-laptop-code"></i></span>
+                    <h4>Web Development</h4>
+                    <p>
+                        Dernières technologies Web et outils de développement pour créer des sites Web rapides,
+                        sécurisés et
+                        évolutifs.
+                    </p>
+                </div>
+                <div class="card__services">
+                    <span><i class="fa-solid fa-mobile-screen"></i></span>
+                    <h4>Mobile first</h4>
+                    <p>
+                        Un Web Design optimisé pour mobile est un impératif pour attirer des clients. En effet, la
+                        consultation des sites web avec un mobile est toujours en croissance.
+                    </p>
+                </div>
+                <div class="card__services">
+                    <span><i class="fa-brands fa-searchengin"></i></span>
+                    <h4>SEO</h4>
+                    <p>
+                        Stratégies SEO sont adaptées à vos objectifs spécifiques, vous aidant
+                        à atteindre votre public cible et à développez votre présence en ligne.
+                    </p>
+                </div>
+                <div class="card__services">
+                    <span><i class="fa-solid fa-brush"></i></span>
+                    <h4>Website Design</h4>
+                    <p>
+                        Interfaces conviviales qui engagent les visiteurs et vous aident
+                        atteignez vos objectifs en ligne avec un minimum d'efforts.
+                    </p>
+                </div>
+                <div class="card__services">
+                    <span><i class="fa-solid fa-list-check"></i></span>
+                    <h4>Audit SEO</h4>
+                    <p>
+                        Augmentez le trafic de votre site grâce au référencement naturel (SEO). Améliorez le
+                        référencement d'un site en agissant sur sa crawlabilité et sa vitesse.
+                    </p>
+                </div>
+                <div class="card__services">
+                    <span><i class="fa-solid fa-ranking-star"></i></span>
+                    <h4>Content Marketing</h4>
+                    <p>
+                        Mes services incluent la création d'articles de blog, de vidéos et de contenu sur les réseaux
+                        sociaux qui
+                        génèrent du trafic et de l'engagement.
+                    </p>
+                </div>
             </div>
-          </div>
+        </section>
+        <section id="testimonials">
+            <h2>Temoignages</h2>
+            <h3>Ce que mes clients disent de moi.</h3>
+        </section>
+        <section id="relatives">
+            <h2>En lien</h2>
+            <h3>Activités relatives</h3>
+            <div class="grid__relatives">
+                <div class="card__post">
+                    <img src="assets/blog-1.jpg" class="img__post" alt="blog" />
+                    <h4>Je code...</h4>
+                    <p>Pour des JDR sur Forumactif.</p>
+                </div>
+                <div class="card__post">
+                    <img src="assets/blog-2.jpg" class="img__post" alt="blog" />
+                    <h4>Je participe à...</h4>
+                    <p> Un BootCamp appelé "Unstoppable Content Creators"</p>
+                </div>
+                <div class="card__post">
+                    <img src="assets/blog-3.jpg" class="img__post" alt="blog" />
+                    <h4>En ce moment j'écoute...</h4>
+                    <p>"Unfu*k Yourself: Get Out of Your Head and Into Your Life" de Gary John Bishop</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content__footer">
+            <div class="col">
+                <p>
+                    Je suis une développeuse Web dévouée, dotée d'un flair créatif et d'un penchant pour transformer des
+                    lignes de
+                    code en expériences en ligne captivantes.
+                </p>
+                <nav class="nav__socials__footer">
+                    <li><a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                </nav>
+            </div>
+            <p>
+                <small> © 2024 Emanuela Palazzo Lacanfora. All rights reserved.</small>
+            </p>
         </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <section class="section__container blog__container" id="relative">
-    <p class="section__subheader">En lien</p>
-    <h2 class="section__header">Activités relatives</h2>
-    <div class="blog__grid">
-      <div class="blog__card">
-        <video src="assets/blog-1.mp4" alt="blog" controls>
-          <source src="assets/blog-1.mp4" type="video/mp4" />
-        </video>
-        <p>Je code...</p>
-        <h4>Des forums (forumactif)</h4>
-      </div>
-      <div class="blog__card">
-        <img src="assets/blog-2.jpg" alt="blog" />
-        <p>Je me forme...</p>
-        <h4>Pour vous apporter...</h4>
-      </div>
-      <div class="blog__card">
-        <img src="assets/blog-3.jpg" alt="blog" />
-        <p>Je lis...</p>
-        <h4>ou écoute des livres inspirant.</h4>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <h5><a href="#">Emanuela.</a></h5>
-        <p>
-          Je suis une développeuse Web dévouée, dotée d'un flair créatif et d'un penchant pour transformer des lignes de
-          code en expériences en ligne captivantes.
-        </p>
-        <div class="footer__socials">
-          <a href="https://github.com/emanuelapalazzolacanfora" target="_blank"><i class="ri-github-fill"></i></a>
-      <a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-      <a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i class="ri-instagram-fill"></i></a>
-      <a href="#"><i class="ri-mail-fill"></i></a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4>Services</h4>
-        <div class="footer__links">
-          <a href="#">Web Design</a>
-          <a href="#">App Design</a>
-          <a href="#">Photography</a>
-          <a href="#">Videography</a>
-          <a href="#">Web Development</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4>Support</h4>
-        <div class="footer__links">
-          <a href="#">Contact</a>
-          <a href="#">My Blog</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bar">
-      Copyright © 2024 Emanuela Palazzo Lacanfora. All rights reserved.
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-
+    </footer>
+    <script src="filter.js"></script>
 </body>
 
 </html>
