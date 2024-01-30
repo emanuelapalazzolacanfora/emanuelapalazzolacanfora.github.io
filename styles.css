@@ -282,14 +282,16 @@ section#mindset {
   padding-right: 16rem;
 }
 
-.grid__projects {
+.grid__projects, .grid__testimonials {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
-.card__projects img {
+.card__projects img, .card__testimonials img {
+  object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
+  height: 290px;
 }
 img, video {
   display: flex;
@@ -330,6 +332,12 @@ img, video {
   transition: 0.3s;
 }
 
+/* TESTIMONIALS */
+
+.card__testimonials img{
+  height: 368px;
+}
+
 /* RELATIVES */
 
 .card__post {
@@ -338,7 +346,7 @@ img, video {
 }
 
 .card__post h4{
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
 }
 
 /* FOOTER */
