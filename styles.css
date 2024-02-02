@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
 :root {
   --primary-color: hsl(326.96deg 72.63% 37.25%);
   --primary-color-dark: hsl(326.96deg 76.96% 26.07%);
@@ -48,11 +50,13 @@ li {
   height: 4px;
   background-color: var(--primary-color);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color-dark);
   position: absolute;
   z-index: 99;
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--primary-color);
   position: absolute;
@@ -65,7 +69,8 @@ header {
 }
 
 header,
-section#mindset, footer {
+section#mindset,
+footer {
   background-color: var(--secondary-color-dark);
 }
 
@@ -73,7 +78,8 @@ section#mindset, footer {
 .nav__header,
 .nav__header ul,
 .nav__skillset ul,
-.nav__projects ul, .nav__socials__footer {
+.nav__projects ul,
+.nav__socials__footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,12 +88,14 @@ section#mindset, footer {
   gap: var(--basic-size);
 }
 
-.content__header{
+.content__header {
   justify-content: space-evenly;
   padding: 2rem 0;
 }
 
-.content__header,.nav__header, .content__footer {
+.content__header,
+.nav__header,
+.content__footer {
   margin: auto;
   max-width: var(--max-width);
 }
@@ -114,7 +122,7 @@ section,
 .content__mindset {
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem 0;
+  padding: 0 1rem 2rem;
 }
 
 section h2 {
@@ -195,8 +203,10 @@ section#mindset {
 
 /* GARANTIES */
 .grid__garanties,
+.grid__values,
 .grid__services,
-.grid__relatives, .content__footer {
+.grid__relatives,
+.content__footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -264,16 +274,41 @@ section#mindset {
   border-radius: 5px;
 }
 
-.nav__skillset ul, .nav__socials__footer{
+.nav__skillset ul,
+.nav__socials__footer {
   justify-content: flex-start;
 }
 
-.nav__skillset a, .nav__socials__footer a {
+.nav__skillset a,
+.nav__socials__footer a {
   padding: 3px 8px;
   font-size: 1.25rem;
   color: var(--secondary-color);
   background-image: var(--gradient);
   border-radius: 100%;
+}
+
+.img__values,
+.value,
+.grid__values {
+  grid-column: 1/4;
+  padding-block: 0;
+}
+
+.img__values {
+  display: block;
+  margin: auto;
+  width: 80px;
+}
+
+.value {
+  text-align: center;
+}
+
+.h3__values {
+  margin-bottom: 1rem;
+  font-family: bitter;
+  font-size: 3rem;
 }
 
 /* PROJECTS */
@@ -282,27 +317,31 @@ section#mindset {
   padding-right: 16rem;
 }
 
-.grid__projects, .grid__testimonials {
+.grid__projects,
+.grid__testimonials {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
-.card__projects img, .card__testimonials img {
+
+.card__projects img {
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
   height: 290px;
 }
-img, video {
+
+img,
+video {
   display: flex;
   width: 100%;
 }
+
 /* SERVICES */
 
 #services p.description {
   max-width: 600px;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin: 1rem auto;
   margin-inline: auto;
   color: var(--text-light);
   text-align: center;
@@ -334,18 +373,158 @@ img, video {
 
 /* TESTIMONIALS */
 
-.card__testimonials img{
-  height: 368px;
+section#testimonials {
+  padding: 7rem 0;
+}
+
+.card__testimonials__left {
+  margin-bottom: 110px;
+}
+
+.card__testimonials__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__testimonials2__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 6rem;
+}
+
+.card__testimonials__right {
+  margin-top: 110px;
+}
+
+.card__testimonials2 {
+  padding: 2rem 1rem;
+  background-color: var(--secondary-color-dark);
+}
+
+.text__testimonials {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  padding: 10px 25px;
+  border-radius: 100%;
+  outline: solid 5px #6d0d46;
+  background-color: var(--white);
+}
+
+.text__testimonials2 {
+  position: relative;
+  padding: 10px 25px;
+}
+
+.h4__testimonials {
+  margin-bottom: 2rem;
+  font-family: 'Bitter';
+  font-size: 2.3rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.testimonial {
+  padding: 0 1rem 0.5rem;
+  font-size: 0.84rem;
+  text-align: center;
+  color: var(--secondary-color-dark)
+}
+
+.text__testimonials2 .testimonial {
+  font-size: 1rem;
+  color: var(--white);
+  text-align: justify;
+}
+
+.img__testimonials__top {
+  position: absolute;
+  right: 270px;
+  bottom: 320px;
+  width: 80px;
+  height: 65px;
+  rotate: 180deg;
+}
+
+.img__testimonials__bottom {
+  position: absolute;
+  left: 280px;
+  bottom: -8px;
+  width: 80px;
+  height: 65px;
+  rotate: 180deg;
+}
+
+/* 2nd DESIGN */
+
+section#testimonials2 {
+  padding: 1.8rem 0 1rem;
+}
+.card__testimonials2 {
+  margin: 2rem 1rem 0;
+  padding: 1rem 0;
+  background-color: var(--secondary-color-dark);
+}
+.text__testimonials2 {
+  position: relative;
+  padding: 0px 25px;
+}
+.h4__testimonials2 {
+  margin-bottom: 1.1rem;
+  font-family: 'Bitter';
+  font-size: 2.3rem;
+  color: var(--text-light);
+  text-align: center;
+}
+.testimonial2 {
+  padding: 0 1rem 0.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  text-align: justify;
+}
+.quote {
+  position: absolute;
+  right: 47%;
+  bottom: 160px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--secondary-color-light);
+  border-radius: 100%;
+}
+.img__testimonials2 {
+  display: block;
+  width: 38px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.card__testimonials2__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 3rem;
+  padding: 2rem 0;
+}
+/* PROJECTS */
+
+.grid__projects {
+  height: 620px;
 }
 
 /* RELATIVES */
+
+section#relatives {
+  padding-bottom: 0;
+}
 
 .card__post {
   margin-bottom: 1rem;
   border-radius: 5px;
 }
 
-.card__post h4{
+.card__post h4 {
   color: var(--primary-color-dark);
 }
 
@@ -367,13 +546,13 @@ img, video {
   padding: 1rem 1rem 0;
 }
 
-.nav__socials__footer a{
+.nav__socials__footer a {
   background-color: var(--secondary-color-light);
   background-image: none;
   color: inherit;
 }
 
-.nav__socials__footer a:hover{
+.nav__socials__footer a:hover {
   color: var(--secondary-color);
   background-image: var(--gradient);
 }
@@ -389,11 +568,11 @@ footer .col p {
   color: var(--text-light);
 }
 
-footer p{
+footer p {
   grid-column: 1/4;
 }
 
-p small{
+p small {
   display: block;
   padding: 1rem;
   font-size: 0.8rem;
