@@ -387,13 +387,6 @@ section#testimonials {
   justify-content: center;
 }
 
-.card__testimonials2__center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem 0 6rem;
-}
-
 .card__testimonials__right {
   margin-top: 110px;
 }
@@ -413,11 +406,6 @@ section#testimonials {
   background-color: var(--white);
 }
 
-.text__testimonials2 {
-  position: relative;
-  padding: 10px 25px;
-}
-
 .h4__testimonials {
   margin-bottom: 2rem;
   font-family: 'Bitter';
@@ -431,12 +419,6 @@ section#testimonials {
   font-size: 0.84rem;
   text-align: center;
   color: var(--secondary-color-dark)
-}
-
-.text__testimonials2 .testimonial {
-  font-size: 1rem;
-  color: var(--white);
-  text-align: justify;
 }
 
 .img__testimonials__top {
@@ -460,11 +442,18 @@ section#testimonials {
 /* 2nd DESIGN */
 
 section#testimonials2 {
-  padding: 1.8rem 0 1rem;
+  padding: 4em 0 7rem;
+}
+.card__testimonials2__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 5rem;
+  padding: 2rem 0;
 }
 .card__testimonials2 {
-  margin: 2rem 1rem 0;
-  padding: 1rem 0;
+  margin: 2rem 1rem 3rem;
+  padding: 2rem 0;
   background-color: var(--secondary-color-dark);
 }
 .text__testimonials2 {
@@ -499,13 +488,6 @@ section#testimonials2 {
   height: 30px;
   margin-top: 20px;
   margin-left: 16px;
-}
-.card__testimonials2__center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 0 3rem;
-  padding: 2rem 0;
 }
 /* PROJECTS */
 
