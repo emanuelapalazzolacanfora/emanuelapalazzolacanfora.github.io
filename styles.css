@@ -376,7 +376,10 @@ video {
 section#testimonials {
   padding: 7rem 0;
 }
-
+.grid__testimonials2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
 .card__testimonials__left {
   margin-bottom: 110px;
 }
@@ -389,11 +392,6 @@ section#testimonials {
 
 .card__testimonials__right {
   margin-top: 110px;
-}
-
-.card__testimonials2 {
-  padding: 2rem 1rem;
-  background-color: var(--secondary-color-dark);
 }
 
 .text__testimonials {
@@ -444,15 +442,9 @@ section#testimonials {
 section#testimonials2 {
   padding: 4em 0 7rem;
 }
-.card__testimonials2__center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 0 5rem;
-  padding: 2rem 0;
-}
 .card__testimonials2 {
-  margin: 2rem 1rem 3rem;
+  width: 590px;
+  margin: 2rem 0;
   padding: 2rem 0;
   background-color: var(--secondary-color-dark);
 }
@@ -475,8 +467,8 @@ section#testimonials2 {
 }
 .quote {
   position: absolute;
-  right: 47%;
-  bottom: 160px;
+  right: 43%;
+  bottom: 242px;
   width: 70px;
   height: 70px;
   background-color: var(--secondary-color-light);
@@ -489,6 +481,7 @@ section#testimonials2 {
   margin-top: 20px;
   margin-left: 16px;
 }
+
 /* PROJECTS */
 
 .grid__projects {
@@ -560,4 +553,93 @@ p small {
   font-size: 0.8rem;
   color: var(--text-light);
   text-align: center;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: 5rem auto 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -22px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--white);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 30px;
+  margin: 0 2px;
+  color: var(--white);
+  display: inline-block;
+  transition: color 0.6s ease;
+}
+
+.active, .dot:hover {
+  color: var(--primary-color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
