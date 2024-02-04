@@ -44,7 +44,8 @@
                             class="fa-brands fa-linkedin-in"></i></a></li>
                 <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="social" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"><i
+                            class="fa-solid fa-envelope"></i></a></li>
             </nav>
             <div class="content__mindset">
                 <div class="text__mindset">
@@ -68,7 +69,7 @@
                     <div class="description__garanties">
                         <h3>Design</h3>
                         <p>
-                            Un engagement pour vous offrir un contenu numérique engageant. Une approche collaborative,
+                            Une approche collaborative,
                             encourageant vos
                             commentaires tout au long du processus de conception pour vous garantir que nous répondons à
                             vos
@@ -124,7 +125,8 @@
                                     class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"><i
+                                    class="fa-solid fa-envelope"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -203,34 +205,34 @@
             </div>
         </section>
         <section id="projects">
-            <nav class="nav__projects">
-                <ul>
-                    <li>
-                        <h2>Mes Projets</h2>
-                    </li>
-                    <li><button class="btn btn__projects mixitup-control-active" data-filter="all">Tous</button>
-                    <li><button class="btn btn__projects" data-filter="mobil">Mobile-First</button>
-                    <li><button class="btn btn__projects" data-filter="responsive">Responsive</button>
-                    <li><button class="btn btn__projects" data-filter="wordpress">Wordpress</button>
-                </ul>
-            </nav>
-            <div class="grid__projects">
-                <div class="card__projects mobil" data-item="mobil">
+            <header class="header__projects">
+                <h2>Mes Projets</h2>
+                <div class="menu__projects">
+                    <button class="btn btn__projects btn__active" onclick="filterItems('all')">tous</button>
+                    <button class="btn btn__projects" onclick="filterItems('mobil')">mobil first</button>
+                    <button class="btn btn__projects" onclick="filterItems('wordpress')">wordpress</button>
+                    <button class="btn btn__projects" onclick="filterItems('autre')">autre</button>
+                    <!-- Ajoutez plus de boutons selon vos besoins -->
+                </div>
+            </header>
+            <div class="grid__projects items">
+                <!-- Contenu à filtrer -->
+                <div class="card__projects item mobil">
                     <img src="assets/mobil-1.jpg" class="img__projects" alt="project" />
                 </div>
-                <div class="card__projects mobil" data-item="mobil">
+                <div class="card__projects item mobil">
                     <img src="assets/mobil-2.jpg" class="img__projects" alt="project" />
                 </div>
-                <div class="card__projects wordpress" data-item="wordpress">
+                <div class="card__projects item wordpress">
                     <img src="assets/wordpress.jpg" class="img__projects" alt="project" />
                 </div>
-                <div class="card__projects responsive" data-item="responsive">
+                <div class="card__projects item autre">
                     <img src="assets/project-1.jpg" class="img__projects" alt="project" />
                 </div>
-                <div class="card__projects responsive" data-item="responsive">
+                <div class="card__projects item autre">
                     <img src="assets/project-1.jpg" class="img__projects" alt="project" />
                 </div>
-                <div class="card__projects responsive" data-item="responsive">
+                <div class="card__projects item autre">
                     <img src="assets/project-1.jpg" class="img__projects" alt="project" />
                 </div>
             </div>
@@ -338,8 +340,8 @@
 
             </div>
             <div style="text-align:center">
-                <span  class="dot" onclick="currentSlide(1)">1-2</span> 
-                <span  class="dot" onclick="currentSlide(2)">3-4</span> 
+                <span class="dot" onclick="currentSlide(1)">1-2</span>
+                <span class="dot" onclick="currentSlide(2)">3-4</span>
             </div>
         </section>
         <section id="relatives">
@@ -379,7 +381,8 @@
                                 class="fa-brands fa-linkedin-in"></i></a></li>
                     <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"><i
+                                class="fa-solid fa-envelope"></i></a></li>
                 </nav>
             </div>
             <p>
@@ -387,7 +390,7 @@
             </p>
         </div>
     </footer>
-    <script src="filter.js"></script>
+    <script src="menu.js"></script>
     <script src="slide.js"></script>
 </body>
 

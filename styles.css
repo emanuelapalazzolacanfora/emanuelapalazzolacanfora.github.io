@@ -78,7 +78,7 @@ footer {
 .nav__header,
 .nav__header ul,
 .nav__skillset ul,
-.nav__projects ul,
+.header__projects,
 .nav__socials__footer {
   display: flex;
   justify-content: center;
@@ -116,7 +116,17 @@ h1 {
 .nav__header .btn a {
   color: var(--secondary-color) !important;
 }
-
+.btn,
+.nav__skillset a.btn {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  background-image: var(--gradient);
+  border-radius: 5rem;
+  cursor: pointer;
+}
 /* MAIN */
 section,
 .content__mindset {
@@ -313,8 +323,20 @@ section#mindset {
 
 /* PROJECTS */
 
-.nav__projects li:first-of-type {
-  padding-right: 16rem;
+.header__projects {
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.btn__projects{
+  color: var(--white);
+  background-color: var(--secondary-color-light);
+  background-image: none;
+}
+
+.btn__active{
+  color: var(--secondary-color);
+  background-image: var(--gradient);
 }
 
 .grid__projects,
@@ -488,6 +510,7 @@ section#testimonials2 {
   height: 620px;
 }
 
+
 /* RELATIVES */
 
 section#relatives {
@@ -504,18 +527,6 @@ section#relatives {
 }
 
 /* FOOTER */
-
-.btn,
-.nav__skillset a.btn {
-  padding: 0.5rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--secondary-color);
-  background-image: var(--gradient);
-  border-radius: 5rem;
-  cursor: pointer;
-}
 
 .content__footer {
   padding: 1rem 1rem 0;
@@ -624,7 +635,7 @@ img {vertical-align: middle;}
   transition: color 0.6s ease;
 }
 
-.active, .dot:hover {
+.slide__active, .dot:hover {
   color: var(--primary-color);
 }
 
@@ -643,3 +654,6 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
