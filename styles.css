@@ -159,7 +159,7 @@ section#mindset {
 
 .nav__socials {
   position: absolute;
-  right: -1;
+  right: -1px;
   top: 0;
   transform: translateY(65%);
   z-index: 1;
@@ -588,10 +588,6 @@ footer .col p {
   margin-bottom: 1.5rem;
   font-size: 0.75rem;
   color: var(--text-light);
-}
-
-footer p {
-  grid-column: 1/4;
 }
 
 p small {
