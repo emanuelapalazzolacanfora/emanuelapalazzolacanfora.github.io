@@ -159,7 +159,7 @@ section#mindset {
 
 .nav__socials {
   position: absolute;
-  right: 0;
+  right: -1;
   top: 0;
   transform: translateY(65%);
   z-index: 1;
