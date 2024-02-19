@@ -184,7 +184,7 @@
     <section id="skillset">
       <div class="skillset-container">
         <div class="grid grid__deux content" data-lang="fr">
-          <img src="assets/dessin-vectoriel-d-une-webdevelopper-crane-rasé-fille.webp"
+          <img src="assets/webdevelopper.webp"
             alt="Un image vectoriel d'une web developeuse crane rasée, en rose noir et bleu" />
           <div class="skillset-subcontainer">
             <h2>Qui suis-je?</h2>
@@ -308,29 +308,29 @@
               <button class="btn btn__radius projects-btn btn__active" onclick="filterItems('all')">tous</button>
               <button class="btn btn__radius projects-btn" onclick="filterItems('mobil')">mobil first</button>
               <button class="btn btn__radius projects-btn" onclick="filterItems('wordpress')">wordpress</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('coding')">coding</button>
+              <button class="btn btn__radius projects-btn" onclick="filterItems('autre')">autre</button>
               <!-- Ajoutez plus de boutons selon vos besoins -->
             </div>
           </header>
           <div class="grid items">
             <!-- Contenu à filtrer -->
-            <div class="card projects-card item coding mobil">
-              <img src="assets/site-coding-mobilfirst-music.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item mobil">
+              <img src="assets/mobil-1.jpg" class="projects-img" alt="project" />
             </div>
-            <div class="card projects-card item wordpress mobil">
-              <img src="assets/site-wordpress-mobilfirst-vinyls.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item mobil">
+              <img src="assets/mobil-2.jpg" class="projects-img" alt="project" />
             </div>
-            <div class="card projects-card item coding mobil">
-              <img src="assets/site-coding-mobilfirst-fleuriste.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item wordpress">
+              <img src="assets/wordpress.jpg" class="projects-img" alt="project" />
             </div>
-            <div class="card projects-card item wordpress mobil">
-              <img src="assets/site-wordpress-mobilfirst-chanteuse.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item autre">
+              <img src="assets/project-1.jpg" class="projects-img" alt="project" />
             </div>
-            <div class="card projects-card item coding mobil">
-              <img src="assets/site-coding-mobilfirst-festival.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item autre">
+              <img src="assets/project-1.jpg" class="projects-img" alt="project" />
             </div>
-            <div class="card projects-card item coding mobil">
-              <img src="assets/site-coding-mobilfirst-artisane.webp" class="projects-img" alt="project" />
+            <div class="card projects-card item autre">
+              <img src="assets/project-1.jpg" class="projects-img" alt="project" />
             </div>
           </div>
         </div>
@@ -343,7 +343,7 @@
           <h3>Ce que mes clients disent de moi.</h3>
           <div class="carousel-container">
             <div class="carousel">
-              <div class="carousel-items flex start__content">
+              <div class="carousel-items flex">
                 <div class="carousel-item">
                   <div class="card testimonials-card">
                     <div class="testimonials-text">
@@ -362,7 +362,7 @@
                         facilité avec laquelle elle semble gérer tout ce monde.
                       </p>
                       <div class="quote">
-                        <img src="assets/guillemet.webp" alt="double guillements ouvert pour la citation du témoignage"
+                        <img src="assets/guillemet2.webp" alt="double guillements ouvert pour la citation du témoignage"
                           class="testimonials-img">
                       </div>
                     </div>
@@ -382,20 +382,65 @@
 
                       </p>
                       <div class="quote">
-                        <img src="assets/guillemet.webp" alt="double guillements ouvert pour la citation du témoignage"
+                        <img src="assets/guillemet2.webp" alt="double guillements ouvert pour la citation du témoignage"
+                          class="testimonials-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide pour les écrans > 768px -->
+                <div class="carousel-item__large flex start__content">
+                  <div class="card testimonials-card">
+                    <div class="testimonials-text">
+                      <h4>
+                        Maria <span>espagne</span></h4>
+                      <p class="testimonials-description">
+                        Mon site ayant des défaillance, et n'arrivant pas seule à ameliorer l'expérience
+                        des
+                        utilisateurs navigant sur
+                        celui-ci, j'ai rechercher de l'aide. Emanuela m'a patiemment apporté son aide,
+                        prenant le
+                        temps de m'écouter, et de prendre en comptes toutes mes attentes. Je n'ai pas de
+                        mots pour
+                        le temps qu'elle a passé et sa gentillesse. Je suis très reconnaissant et
+                        surpris par la
+                        facilité avec laquelle elle semble gérer tout ce monde.
+                      </p>
+                      <div class="quote">
+                        <img src="assets/guillemet2.webp" alt="double guillements ouvert pour la citation du témoignage"
+                          class="testimonials-img">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card testimonials-card">
+                    <div class="testimonials-text">
+                      <h4>
+                        Cynthia <span>france</span></h4>
+                      <p class="testimonials-description">
+                        Codeuse très professionnelle, qui met du cœur à l'ouvrage et qui a su répondre à chacune de mes
+                        demandes, s'efforçant de faire au mieux et d'être toujours au max. Jamais découragée par un
+                        problème, elle en va au cœur pour le résoudre afin de respecter au maximum le souhait de son
+                        client. Je recommande fortement de travailler avec elle, elle a l'humain à cœur et cela ne fait
+                        qu'ajouter un plus à son travail !
+
+                      </p>
+                      <div class="quote">
+                        <img src="assets/guillemet2.webp" alt="double guillements ouvert pour la citation du témoignage"
                           class="testimonials-img">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <button title="précédent" class="carousel-btn" onclick="prevSlide()"><i
-                  class="fas fa-chevron-left"></i></button>
-              <button title="suivant" class="carousel-btn" onclick="nextSlide()"><i
-                  class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
             </div>
+            <button title="précédent" class="carousel-btn" onclick="prevSlide()"><i
+                class="fas fa-chevron-left"></i></button>
+            <button title="suivant" class="carousel-btn" onclick="nextSlide()"><i
+                class="fas fa-chevron-right"></i></button>
           </div>
         </div>
+      </div>
     </section>
     <section id="relatives">
       <div class="relatives-container">
@@ -435,21 +480,26 @@
               surpasser. Au travers des lignes de code que j'écris, je tisse ma toile d'expertise.</p>
             <nav class="navbar__footer">
               <ul class="flex start__content">
-                <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte Github de Emanuela PL"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte linkedin de Emanuela PL"><i
-                      class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte Instagram de Emanuela PL"><i
-                      class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"
-                    class="btn btn__radius btn__round" aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i
-                      class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" rel="noopener" rel="noreferrer"
+                  aria-label="Link to the resume of Emanuela Palazzo Lacanfora" class="btn btn__radius">
+                  My CV
+                </a></li>
+              <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Go to Emanuela PL's Github profile"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Go to Emanuela PL's Linkedin profile"><i
+                    class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Go to Emanuela PL's Instagram profile"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MY ART"
+                  class="btn" aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i
+                    class="fa-solid fa-envelope"></i></a></li>
+
               </ul>
             </nav>
           </div>
@@ -470,7 +520,7 @@
                   rel="noreferrer">Contact</a></li>
             </ul>
           </div>
-          <a href="#hello" class="back-to-top"><i class="fa-regular fa-circle-up"
+          <a href="hello" class="back-to-top"><i class="fa-regular fa-circle-up"
               aria-label="Remonter en haut du site"></i></a>
           <div class="copyright">
             <small>&copy;2024 Emanuela Palazzo Lacanfora. All rights reserved.</small>
@@ -481,7 +531,6 @@
   </footer>
   <script src="burger.js"></script>
   <script src="burger-menu.js"></script>
-  <script src="multilangue.js"></script>
   <script src="filter.js"></script>
   <script defer src="testimonials.js"></script>
 </body>

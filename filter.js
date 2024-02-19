@@ -1,26 +1,27 @@
-(() => {
-    const buttons = document.querySelectorAll('.btn__projects');
-    const items = document.querySelectorAll('.card__projects');
-    const img = document.querySelectorAll('.img__projects');  
-      console.log(img);
-      for(let i = 0; i < img.length; i++ ) {
+function filterItems(category) {
+  const items = document.querySelectorAll('.item');
+  items.forEach(item => {
+      item.style.display = 'none';
+      if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
       }
-      
-      buttons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-          e.preventDefault();
-          const filter = e.target.dataset.filter;
-          items.forEach((item) => {
-            if(filter === 'all') {
-               item.style.display = 'block';
-            } else {
-              if(item.classList.contains(filter)) {
-                item.style.display = 'block';
-              } else {
-                item.style.display = 'none';
-              }
-            }
+  });
+}
+document.addEventListener('DOMContentLoaded', function () {
+  // Sélectionner tous les boutons
+  const buttons = document.querySelectorAll('.projects-btn');
+
+  buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        if (!this.classList.contains('btn__active')) {
+          // Retirer la classe "active" de tous les boutons
+          buttons.forEach(function (btn) {
+            btn.classList.remove('btn__active');
           });
-        });
-      })
-    })();
+  
+          // Ajouter la classe "active" au bouton actuel
+          this.classList.add('btn__active');
+        }
+      });
+    });
+  });
