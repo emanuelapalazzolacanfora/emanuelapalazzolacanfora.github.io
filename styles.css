@@ -823,7 +823,7 @@ footer {
 
   header .navbar.flex {
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 0;
   }
 
   .navbar__socials {
@@ -834,8 +834,13 @@ footer {
     display: none;
   }
 
-  .menu-list {
+  .menu-list.flex {
     justify-content: space-between;
+    gap: 0.44rem;
+    background-color: transparent;
+    -moz-backdrop-filter:unset;
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
   }
 
   .show {
@@ -868,6 +873,49 @@ footer {
     transition-delay: 0;
   }
 
+#values h3 {
+    font-size: 2rem;
+}
+  .carousel-item {
+    min-width: 50%;
+  }
+
+  .footer-description,
+  .social-buttons,
+  .back-to-top {
+    float: left;
+  }
+
+  .footer-description {
+    width: 60%;
+  }
+
+  .site-menu {
+    float: left;
+    margin-right: 0;
+    width: 15%;
+  }
+
+  .back-to-top {
+    position: unset;
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-with:940px) {
+  #values h3 {
+    font-size: 3rem;
+}
+  
+}
+@media screen and (min-with:980px){
+  header .navbar.flex {
+    gap: 0.84rem;
+}  
+h1, .menu-list.flex {
+  padding-top: var(--basic-size);
+}
+}
+@media screen and (min-with:1030px) {
   #hello {
     height: 100vh;
     padding-top: 110px;
@@ -900,30 +948,17 @@ footer {
 
   #hello img {
     max-width: 471px;
+  }  
+}
+@media screnn and (min-with:1250px) {
+  /* MENU DU SITE */
+  header .navbar.flex {
+    gap: 3rem;
   }
-
-  .carousel-item {
-    min-width: 50%;
+  h1, .menu-list.flex  {
+    padding-top: 0;
   }
-
-  .footer-description,
-  .social-buttons,
-  .back-to-top {
-    float: left;
-  }
-
-  .footer-description {
-    width: 60%;
-  }
-
-  .site-menu {
-    float: left;
-    margin-right: 0;
-    width: 15%;
-  }
-
-  .back-to-top {
-    position: unset;
-    font-size: 3.2rem;
+  .menu-list.flex {
+    gap: var(--basic-size);
   }
 }
