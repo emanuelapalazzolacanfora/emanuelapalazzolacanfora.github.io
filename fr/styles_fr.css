@@ -953,6 +953,10 @@ footer {
   #bonjour img {
     max-width: 471px;
   }
+
+  .testimonials-description {
+    font-size: 1rem;
+}
 }
 
 @media screen and (min-width: 1150px) {
