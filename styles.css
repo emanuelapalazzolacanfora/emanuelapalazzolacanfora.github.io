@@ -872,7 +872,9 @@ footer {
     opacity: 1;
     transition-delay: 0;
   }
-
+  .hello-container .content:first-of-type {
+    order: 1;
+  }
 #values h3 {
     font-size: 2rem;
 }
