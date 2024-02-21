@@ -7,13 +7,13 @@
  // Vérifier si la langue détectée est supportée
  if (supportedLanguages.includes(userLang)) {
    // Rediriger automatiquement vers la page dans la langue détectée
-   window.location.href = userLang + '/' + 'index_' + userLang + '.html';
+   window.location.href = '/' + userLang + '/index-' + userLang + '.html';
 
    // Afficher un message dans un élément de votre site
    displayMessage(getAlertMessage(userLang));
  } else {
    // Si la langue n'est pas proposée, rediriger vers une langue par défaut (par exemple, le français)
-   window.location.href = 'index_fr.html'; // Vous pouvez également choisir 'index_en.html' pour l'anglais
+   window.location.href = 'fr/index_fr.html'; // Vous pouvez également choisir 'index_en.html' pour l'anglais
 
    // Afficher un message dans un élément de votre site
    displayMessage(getAlertMessage('fr'));
