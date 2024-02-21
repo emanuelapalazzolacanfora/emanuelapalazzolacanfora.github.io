@@ -13,7 +13,7 @@
    displayMessage(getAlertMessage(userLang));
  } else {
    // Si la langue n'est pas proposée, rediriger vers une langue par défaut (par exemple, le français)
-   window.location.href = 'fr/index_fr.html'; // Vous pouvez également choisir 'index_en.html' pour l'anglais
+   window.location.href = '/fr/index_fr.html'; // Vous pouvez également choisir 'index_en.html' pour l'anglais
 
    // Afficher un message dans un élément de votre site
    displayMessage(getAlertMessage('fr'));
@@ -44,5 +44,5 @@
  // Fonction pour gérer le changement de langue depuis le sélecteur
  function changeLanguage(selectedLang) {
    // Rediriger vers la page dans la langue sélectionnée
-   window.location.href = 'index_' + selectedLang + '.html';
+   window.location.href =  '/' + selectedLang + '/index-' + selectedLang + '.html';
  }
