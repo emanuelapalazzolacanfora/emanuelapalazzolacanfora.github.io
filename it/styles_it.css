@@ -495,9 +495,9 @@ main {
 
 /* WHOIAM */
 #chisono,
-#servizzi,
+#servizi,
 #progetti,
-#recenzione {
+#recensione {
   padding-top: 52px;
   padding-bottom: 0;
 }
@@ -528,15 +528,15 @@ main {
 }
 
 /* SERVICES */
-#servizzi h3 {
+#servizi h3 {
   margin-bottom: 0;
 }
 
-#servizzi .grid {
+#servizi .grid {
   gap: 2rem 1rem;
 }
 
-#servizzi .card {
+#servizi .card {
   position: relative;
   display: block;
   padding: 2rem;
@@ -544,7 +544,7 @@ main {
   text-align: center;
 }
 
-#servizzi .card span {
+#servizi .card span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -556,7 +556,7 @@ main {
   transition: 0.3s;
 }
 
-#servizzi .card:hover span {
+#servizi .card:hover span {
   color: var(--secondary-color);
   background-image: var(--gradient);
 }
@@ -576,7 +576,7 @@ header.projects-header.flex {
 }
 
 /* TESTIMONIALS */
-#recenzione {
+#recensione {
   padding-top: 110px;
 }
 
@@ -616,7 +616,7 @@ header.projects-header.flex {
   padding: 0px 25px;
 }
 
-#recenzione h4 {
+#recensione h4 {
   margin-bottom: 1.1rem;
   font-family: 'Bitter';
   font-size: 2.3rem;
@@ -624,7 +624,7 @@ header.projects-header.flex {
   text-align: center;
 }
 
-#recenzione h4 span {
+#recensione h4 span {
   font-family: "Poppins", sans-serif;
   font-size: 0.65rem;
   font-weight: 400;
