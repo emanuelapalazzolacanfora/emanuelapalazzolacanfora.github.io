@@ -7,7 +7,7 @@
  // Vérifier si la langue détectée est supportée
  if (supportedLanguages.includes(userLang)) {
    // Rediriger automatiquement vers la page dans la langue détectée
-   window.location.href = 'index_' + userLang + '.html';
+   window.location.href = userLang + '/' + 'index_' + userLang + '.html';
 
    // Afficher un message dans un élément de votre site
    displayMessage(getAlertMessage(userLang));
