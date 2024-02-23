@@ -4,16 +4,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dévelopeuse.Web.Designer | Emanuela</title>
+  <meta name="description" content="Bonjour, je suis une développeuse web dédiée avec une touche créative, transformant des lignes de code en expériences en ligne mémorables. Mon parcours dans le domaine numérique a débuté par une simple curiosité et s'est transformé en une véritable passion. Je crée des sites web interactifs sur mesure avec créativité et ingéniosité.">
+  <meta name="keywords" content="développeuse web, créativité, expériences en ligne, développement front-end, développement back-end, sites web interactifs">
+  <meta name="author" content="Votre Nom ou Nom de l'Entreprise">
+
+  <!-- Balises Open Graph pour les réseaux sociaux -->
+  <meta property="og:title" content="Développeuse Web Créative">
+  <meta property="og:description" content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
+  <meta property="og:url" content="URL_de_votre_site">
+  <meta property="og:image" content="URL_de_l'image_représentative_de_votre_site.jpg">
+
+  <!-- Balises Twitter Card pour Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Développeuse Web Créative">
+  <meta name="twitter:description" content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
+  <meta name="twitter:image" content="URL_de_l'image_représentative_de_votre_site.jpg">
+
+  <!-- Titre de la page -->
+  <title>Développeuse Web Créative - Création de Sites Web Mémorables</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="chemin/vers/votre_favicon.ico" type="image/x-icon">
+
+  <!-- Feuille de style CSS -->
+  <link rel="stylesheet" href="styles_fr.css">
+
+  <!-- Balise de lien canonique -->
+  <link rel="canonical" href="URL_canonique_de_votre_page">
+
+  <!-- Font Awesome -->
+
   <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles_fr.css" />
-  <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+
+  <!-- LIGNE FOR IE -->
+      <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
           HTML5 fonctionne correctement avec les anciennes versions de
           Internet Explorer-->
   <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>  
-    <![endif]-->
+    <![endif]-->  
+
+  <!-- Balise de suivi Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=ID_DE_VOTRE_ANALYTICS"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'ID_DE_VOTRE_ANALYTICS');
+  </script>
+
+  <!-- Styles pour la bannière de consentement -->
+  <style>
+    .cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: var(--primary-color-dark);
+        text-align: center;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .cookie-banner button {
+        background: var(--secondary-color);
+        border: none;
+        margin: 0 0.56rem;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+</style>
 </head>
+<!-- Bannière de consentement des cookies -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant, vous acceptez notre utilisation des cookies.</p>
+  <button onclick="acceptCookies()">J'accepte</button><button onclick="rejectCookies()">Refuser</button>
+
+  <!-- Liens vers la Politique de Confidentialité et les droits à la vie privée -->
+  <p>Consultez notre <a href="chemin/vers/votre_politique_de_confidentialite.html" target="_blank">Politique de Confidentialité</a> pour en savoir plus sur l'utilisation des cookies et vos droits à la vie privée.</p>
+</div>
 
 <body>
   <header>
@@ -457,15 +527,17 @@
             <!-- Menu du site / Plan du site ici -->
             <ul>
               <li><a href="#bonjour">Bonjour</a></li>
-              <li><a href="#engagements">Engagements</a></li>
               <li><a href="#quijesuis">Qui-suis-je?</a></li>
+              <li><a href="#engagements">Engagements</a></li>
+              <li><a href="#services">Services</a></li>
             </ul>
           </div>
           <div class="site-menu">
             <!-- Menu du site / Plan du site ici -->
             <ul>
-              <li><a href="#services">Services</a></li>
               <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#avis">Avis</a></li>
+              <li><a href="#enlien">En lien</a></li>
               <li><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank" rel="noopener"
                   rel="noreferrer">Contact</a></li>
             </ul>
@@ -479,6 +551,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/cookie-banner.js"></script>
   <script src="../js/burger.js"></script>
   <script src="../js/burger-menu.js"></script>
   <script src="../js/filter.js"></script>
