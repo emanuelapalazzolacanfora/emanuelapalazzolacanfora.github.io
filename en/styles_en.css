@@ -15,7 +15,6 @@
   --gradient: linear-gradient(to right,
       var(--primary-color-dark),
       var(--primary-color));
-  background-repeat: no-repeat;
 }
 
 /* BLOCK */
@@ -968,7 +967,7 @@ footer {
   }
 }
 
-@media screnn and (min-width:1250px) {
+@media screen and (min-width:1250px) {
 
   /* MENU DU SITE */
   header .navbar.flex {
