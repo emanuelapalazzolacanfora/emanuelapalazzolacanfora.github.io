@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=biter, serif&display=swap');
 
 :root {
-  --primary-color: hsl(326.96deg 72.63% 37.25%);
-  --primary-color-dark: hsl(326.96deg 76.96% 26.07%);
-  --secondary-color: #00261f;
-  --secondary-color-light: #022C24;
-  --secondary-color-dark: #01221D;
+  --primary-color-light: hsl(277.81deg 68.22% 79.02%);
+  --primary-color: hsl(280.8deg 72.63% 37.25%);
+  --primary-color-dark: hsl(278.58deg 76.96% 26.07%);
+  --secondary-color: hsl(154.29deg 50% 10.98%);
+  --secondary-color-light: hsl(154deg 65.22% 9.02%);
+  --secondary-color-dark: hsl(155deg 33.33% 14.12%);
   --text-light: #a9b8cd;
   --white: #ffffff;
   --max-width: 1200px;
   --basic-size: 16px;
-  --gradient: linear-gradient(to right,
-      var(--primary-color-dark),
-      var(--primary-color));
+  --gradient: linear-gradient(to right, hsl(278.58deg 76.96% 26.07%), hsl(280.8deg 72.63% 37.25%));
 }
 
 /* BLOCK */
@@ -55,7 +54,9 @@ i {
 }
 
 h1 {
-  font-size: 0.84rem;
+  position: absolute;
+  left: 72px;
+  top: 29px;
 }
 
 section h2 {
@@ -253,12 +254,6 @@ header .navbar.flex,
   transform: rotate(45deg) translateX(-13px) translateY(-13px);
 }
 
-h1 {
-  position: absolute;
-  left: 72px;
-  top: 29px;
-}
-
 .menu-list {
   position: absolute;
   z-index: 400;
@@ -444,7 +439,7 @@ main {
   align-items: center;
   margin-block: 0;
   height: 100px;
-  font-family: bitter;
+  font-family: biter, serif;
   font-size: 3rem;
 }
 
@@ -618,7 +613,7 @@ header.projects-header.flex {
 
 #avis h4 {
   margin-bottom: 1.1rem;
-  font-family: 'Bitter';
+  font-family: 'biter, serif', serif;
   font-size: 2.3rem;
   color: var(--text-light);
   text-align: center;
@@ -684,7 +679,7 @@ header.projects-header.flex {
 }
 
 #enlien .card h4 {
-  color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 .related-card {
@@ -791,9 +786,6 @@ footer {
   }
 
   /* MENU DU SITE */
-  .header-container {
-    padding: 0;
-  }
 
   .header-container {
     padding: 0 1rem;
@@ -852,7 +844,6 @@ footer {
 
   .menu-list a {
 
-    font-weight: bold;
     font-size: initial;
     font-weight: 400;
     display: inline;
