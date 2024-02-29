@@ -1,12 +1,12 @@
 // Fonction pour cacher la bannière de consentement et définir un cookie d'acceptation
 function acceptCookies() {
-    document.getElementById('cookieBanner').style.display = 'none';
-    setCookie('cookies_accepted', 'true', 30); // Le cookie expire dans 365 jours
+    hideCookieBanner();
+    setCookie('cookies_accepted', 'true', 30); // Le cookie expire dans 30 jours
 }
 
 // Fonction pour cacher la bannière de consentement sans définir de cookie
 function rejectCookies() {
-    document.getElementById('cookieBanner').style.display = 'none';
+    hideCookieBanner();
 }
 
 // Fonction pour définir un cookie
@@ -18,4 +18,9 @@ function setCookie(name, value, days) {
         expires = "; expires=" + date.toUTCString();
     }
     document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+// Fonction pour cacher la bannière de consentement
+function hideCookieBanner() {
+    document.getElementById('cookieBanner').style.display = 'none';
 }
