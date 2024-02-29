@@ -587,12 +587,63 @@
       </div>
     </div>
   </footer>
-  <script src="../js/cookie-banner.js"></script>
   <script src="../js/burger.js"></script>
   <script src="../js/burger-menu.js"></script>
   <script src="../js/email.js"></script>
   <script src="../js/filter.js"></script>
   <script defer src="../js/testimonials.js"></script>
+  <script>
+            // Fonction pour définir un cookie
+            function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/fr/";
+        }
+
+        // Fonction pour récupérer la valeur d'un cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            
+            for (const cookie of ca) {
+                let c = cookie.trim();
+                if (c.startsWith(nameEQ)) return c.substring(nameEQ.length, c.length);
+            }
+
+            return null;
+        }
+
+        // Fonction pour cacher la bannière de consentement
+        function hideCookieBanner() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        // Fonction pour cacher la bannière de consentement et définir un cookie d'acceptation
+        function acceptCookies() {
+            hideCookieBanner();
+            setCookie('cookies_accepted', 'true', 30); // Le cookie expire dans 30 jours
+            console.log("Cookies acceptés :", getCookie('cookies_accepted')); // Ajout du message de débogage
+        }
+
+        // Fonction pour cacher la bannière de consentement sans définir de cookie
+        function rejectCookies() {
+            hideCookieBanner();
+        }
+
+        // Vérification du cookie d'acceptation des cookies au chargement de la page
+        window.onload = function () {
+          const cookiesAccepted = getCookie('cookies_accepted');
+console.log("Cookies acceptés :", cookiesAccepted);
+if (!cookiesAccepted) {
+    console.log("Afficher la bannière");
+    document.getElementById('cookieBanner').style.display = 'block';
+}
+        };
+</script>
 </body>
 
 </html>
