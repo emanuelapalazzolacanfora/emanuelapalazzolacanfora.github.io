@@ -625,8 +625,13 @@ function hideCookieBanner() {
 // Fonction pour cacher la bannière de consentement et définir un cookie d'acceptation
 function acceptCookies() {
     hideCookieBanner();
+
+    const expirationDate = new Date();
+    expirationDate.setTime(expirationDate.getTime() + (30 * 24 * 60 * 60 * 1000)); // 30 jours d'expiration
+
     setCookie('cookies_accepted', 'true', 30); // Le cookie expire dans 30 jours
-    console.log("Cookies acceptés :", getCookie('cookies_accepted')); // Ajout du message de débogage
+    console.log("Cookies acceptés :", getCookie('cookies_accepted'));
+    console.log("Date d'expiration du cookie :", expirationDate.toUTCString()); // Ajout de la date d'expiration dans le message de débogage
 }
 
 // Fonction pour cacher la bannière de consentement sans définir de cookie
