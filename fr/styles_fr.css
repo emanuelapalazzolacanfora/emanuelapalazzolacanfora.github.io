@@ -517,9 +517,9 @@ main {
   margin-bottom: 2rem;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--text-light);
+  color: var(--white);
   background-color: var(--secondary-color-light);
-  border-left: 2px solid var(--white);
+  border-left: 2px solid var(--primary-color);
   border-radius: 5px;
 }
 
