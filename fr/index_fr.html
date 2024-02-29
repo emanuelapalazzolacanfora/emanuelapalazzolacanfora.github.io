@@ -646,6 +646,8 @@ window.onload = function () {
     if (!cookiesAccepted) {
         console.log("Afficher la bannière");
         document.getElementById('cookieBanner').style.display = 'block';
+    } else {
+        console.log("Pas besoin d'afficher la bannière, les cookies sont acceptés.");
     }
 };
 </script>
