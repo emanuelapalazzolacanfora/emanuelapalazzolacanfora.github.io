@@ -519,7 +519,7 @@ main {
   font-weight: 400;
   color: var(--text-light);
   background-color: var(--secondary-color-light);
-  border-left: 2px solid var(--primary-color);
+  border-left: 2px solid var(--white);
   border-radius: 5px;
 }
 
