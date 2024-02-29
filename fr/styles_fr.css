@@ -3,17 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=biter, serif&display=swap');
 
 :root {
-  --primary-color-light: hsl(277.81deg 68.22% 79.02%);
+  --primary-color-light: hsl(215, 26%, 73%);
   --primary-color: hsl(326.96deg 76.96% 26.07%);
-  --primary-color-dark:  hsl(274.29deg 64.29% 38.43%);
+  --primary-color-dark: hsl(326.96deg 72.63% 37.25%);
   --secondary-color: #00261f;
   --secondary-color-light: #022C24;
   --secondary-color-dark: #01221D;
-  --text-light: #a9b8cd;
   --white: #ffffff;
   --max-width: 1200px;
   --basic-size: 16px;
-  --gradient: linear-gradient(to right, hsl(274.29deg 64.29% 38.43%), hsl(280.8deg 72.63% 37.25%));
 }
 
 /* BLOCK */
@@ -52,7 +50,6 @@ i {
 .navbar__footer i {
   color: var(--white);
 }
-
 h1 {
   position: absolute;
   left: 72px;
@@ -178,10 +175,11 @@ button i {
 }
 
 .navbar__footer .btn__round:hover {
-  color: var(--secondary-color);
-  background-image: var(--gradient);
+  background-color: var(--primary-color);
 }
-
+.navbar__footer .btn__round:hover i {
+  color: var(--primary-color-light);
+}
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
@@ -234,7 +232,7 @@ header .navbar.flex,
   width: 30px;
   height: 3px;
   margin: 6px 0;
-  background-color: var(--text-light);
+  background-color: var(--primary-color-light);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -393,7 +391,7 @@ main {
   position: unset;
   width: 100%;
   margin-bottom: 2rem;
-  color: var(--text-light);
+  color: var(--primary-color-light);
 }
 
 .hello-link {
@@ -462,7 +460,7 @@ main {
   font-family: "Poppins", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
-  color: var(--text-light);
+  color: var(--primary-color-light);
   text-align: justify;
 }
 
@@ -510,7 +508,7 @@ main {
 .whoiam-description {
   margin-bottom: 1rem;
   text-align: justify;
-  color: var(--text-light);
+  color: var(--primary-color-light);
 }
 
 .highlight {
@@ -617,7 +615,7 @@ header.projects-header.flex {
   margin-bottom: 1.1rem;
   font-family: 'biter, serif', serif;
   font-size: 2.3rem;
-  color: var(--text-light);
+  color: var(--primary-color-light);
   text-align: center;
 }
 
@@ -720,7 +718,7 @@ footer {
 
 .footer-description p {
   font-size: 0.75rem;
-  color: var(--text-light);
+  color: var(--primary-color-light);
 }
 
 .social-buttons {
@@ -753,7 +751,7 @@ footer {
 }
 
 .back-to-top i {
-  color: var(--text-light);
+  color: var(--primary-color-light);
 }
 
 .copyright {

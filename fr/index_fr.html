@@ -3,21 +3,39 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- Balise de méta avec la directive Content-Security-Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  style-src 'self' 'unsafe-inline' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+  script-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it 'unsafe-inline' https://www.google-analytics.com;
+  img-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+  connect-src 'self' https://emanuelapalazzolacanfora.github.io https://www.google-analytics.com;
+  frame-ancestors 'none';  <!-- Interdit l'inclusion de la page dans une balise <frame> ou <iframe> -->
+  object-src 'none';  <!-- Interdit l'utilisation d'objets <object> -->
+  font-src 'self' https://kit.fontawesome.com;  <!-- Autorise les polices depuis Font Awesome -->">
+
+  <!-- Balise viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bonjour, je suis une développeuse web dédiée avec une touche créative, transformant des lignes de code en expériences en ligne mémorables. Mon parcours dans le domaine numérique a débuté par une simple curiosité et s'est transformé en une véritable passion. Je crée des sites web interactifs sur mesure avec créativité et ingéniosité.">
-  <meta name="keywords" content="développeuse web, créativité, expériences en ligne, développement front-end, développement back-end, sites web interactifs">
-  <meta name="author" content="Votre Nom ou Nom de l'Entreprise">
+
+  <!-- Balises liées au référencement (SEO) -->
+  <meta name="description"
+    content="Bonjour, je suis une développeuse web dédiée avec une touche créative, transformant des lignes de code en expériences en ligne mémorables. Mon parcours dans le domaine numérique a débuté par une simple curiosité et s'est transformé en une véritable passion. Je crée des sites web interactifs sur mesure avec créativité et ingéniosité.">
+  <meta name="keywords"
+    content="développeuse web, créativité, expériences en ligne, développement front-end, développement back-end, sites web interactifs">
+  <meta name="author" content="Emanuela Palazzo Lacanfora">
 
   <!-- Balises Open Graph pour les réseaux sociaux -->
   <meta property="og:title" content="Développeuse Web Créative">
-  <meta property="og:description" content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
-  <meta property="og:url" content="URL_de_votre_site">
+  <meta property="og:description"
+    content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
+  <meta property="og:url" content="https://emanuelapalazzolacanfora.github.io/fr/index_fr">
   <meta property="og:image" content="URL_de_l'image_représentative_de_votre_site.jpg">
 
   <!-- Balises Twitter Card pour Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Développeuse Web Créative">
-  <meta name="twitter:description" content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
+  <meta name="twitter:description"
+    content="Je transforme des lignes de code en expériences en ligne mémorables. Je crée des sites web sur mesure avec créativité et ingéniosité.">
   <meta name="twitter:image" content="URL_de_l'image_représentative_de_votre_site.jpg">
 
   <!-- Titre de la page -->
@@ -30,66 +48,71 @@
   <link rel="stylesheet" href="styles_fr.css">
 
   <!-- Balise de lien canonique -->
-  <link rel="canonical" href="URL_canonique_de_votre_page">
+  <link rel="canonical" href="https://emanuelapalazzolacanfora.github.io/fr/index_fr#bonjour" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/en/index_en#hello" hreflang="en" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/it/index_it#buongiorno" hreflang="it" />
 
   <!-- Font Awesome -->
 
   <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
 
   <!-- LIGNE FOR IE -->
-      <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+  <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
           HTML5 fonctionne correctement avec les anciennes versions de
           Internet Explorer-->
   <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>  
-    <![endif]-->  
+    <![endif]-->
 
   <!-- Balise de suivi Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=ID_DE_VOTRE_ANALYTICS"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'ID_DE_VOTRE_ANALYTICS');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'ID_DE_VOTRE_ANALYTICS');
   </script>
 
   <!-- Styles pour la bannière de consentement -->
   <style>
     .cookie-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        background: var(--primary-color);
-        text-align: center;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background: var(--primary-color);
+      text-align: center;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
     }
 
     .cookie-banner button {
-        background: var(--secondary-color);
-        border: none;
-        margin: 0 0.56rem;
-        padding: 8px 16px;
-        cursor: pointer;
+      background: var(--secondary-color);
+      border: none;
+      margin: 0 0.56rem;
+      padding: 8px 16px;
+      cursor: pointer;
     }
-</style>
+  </style>
 </head>
 <!-- Bannière de consentement des cookies -->
 <div class="cookie-banner" id="cookieBanner">
-  <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant, vous acceptez notre utilisation des cookies.</p>
+  <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant, vous acceptez notre
+    utilisation des cookies.</p>
   <button onclick="acceptCookies()">J'accepte</button><button onclick="rejectCookies()">Refuser</button>
 
   <!-- Liens vers la Politique de Confidentialité et les droits à la vie privée -->
-  <p>Consultez notre <a href="chemin/vers/votre_politique_de_confidentialite.html" target="_blank">Politique de Confidentialité</a> pour en savoir plus sur l'utilisation des cookies et vos droits à la vie privée.</p>
+  <p>Consultez notre <a href="chemin/vers/votre_politique_de_confidentialite.html" target="_blank">Politique de
+      Confidentialité</a> pour en savoir plus sur l'utilisation des cookies et vos droits à la vie privée.</p>
 </div>
 
 <body>
   <header>
     <div class="header-container">
       <div class="content" data-lang="fr">
-        <nav class="navbar flex">
+        <nav class="navbar flex"
+          aria-label="Barre de navigation entête du site de la webdéveloppeuse Emanuela Palazzo Lacanfora">
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -97,8 +120,8 @@
           </div>
           <h1>emanuela palazzo lacanfora</h1>
           <ul class="menu-list flex">
-            <li><a class="menu-animation" href="#bonjour" aria-label="Message de bienvenue"><i
-                  class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+            <li><a class="menu-animation" href="#bonjour" aria-label="Message de bienvenue"><i class="fa-solid fa-house"
+                  aria-hidden="true"></i></a></li>
             <li><a class="menu-animation" href="#quijesuis">Qui suis-je?</a></li>
             <li><a class="menu-animation" href="#engagements">Engagements</a></li>
             <li><a class="menu-animation" href="#services">Services</a></li>
@@ -111,7 +134,8 @@
             </li>
           </ul>
         </nav>
-        <nav id="language-selector" class="lang-selector">
+        <nav id="language-selector" class="lang-selector"
+          aria-label="Sélecteur de langue (français, anglais, italien) du site de la webdéveloppeuse Emanuela Palazzo Lacanfora">
           <ul class="flex">
             <li class="btn"><a href="../fr/index_fr.html" onclick="changeLanguage('fr')">Fr</a></li>
             <li class="btn"><a href="../en/index_en.html" onclick="changeLanguage('en')">En</a></li>
@@ -122,7 +146,8 @@
     </div>
   </header>
   <main>
-    <nav class="navbar__socials">
+    <nav class="navbar__socials"
+      aria-label="Boutons de renvoie aux réseau sociaux de la webdéveloppeuse Emanuela Palazzo Lacanfora. + Envoi de mail - Haut du site">
       <ul>
         <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Se rendre sur le compte Github de Emanuela PL"><i
@@ -133,8 +158,9 @@
         <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Se rendre sur le compte Instagram de Emanuela PL"><i
               class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART" class="btn"
-            aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a class="btn emailLink"
+          aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i 
+          class="fa-solid fa-envelope"></i></a></li>
       </ul>
     </nav>
     <section id="bonjour">
@@ -155,7 +181,8 @@
             rel="noopener" rel="noreferrer" aria-label="Contacter Emanuela Palazzo Lacanfora sur WhatsApp">Créons
             ensemble</a>
         </div>
-        <img src="../assets/photo-portrait-de-emanuela-palazzo-lacanfora.webp" alt="une photo d'Emanuela Palazzo Lacanfora" />
+        <img src="../assets/photo-portrait-de-emanuela-palazzo-lacanfora.webp"
+          alt="une photo d'Emanuela Palazzo Lacanfora" />
       </div>
     </section>
     <section id="engagements">
@@ -275,28 +302,30 @@
               Je code des projets impactant évoluant
               au grés des nouvelles technique, auxquelles je me forme en continue.
             </p>
-            <nav class="navbar__whoiam">
-              <ul class="flex">
-                <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" rel="noopener" rel="noreferrer"
-                    aria-label="Lien vers le cv d'Emanuela Palazzo Lacanfora" class="btn btn__radius">
-                    Mon CV
-                  </a></li>
-                <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte Github de Emanuela PL"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte linkedin de Emanuela PL"><i
-                      class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
-                    target="_blank" rel="noopener" rel="noreferrer"
-                    aria-label="Se rendre sur le compte Instagram de Emanuela PL"><i
-                      class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"
-                    class="btn btn__radius btn__round" aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i
-                      class="fa-solid fa-envelope"></i></a></li>
-              </ul>
+            <nav class="navbar__whoiam"
+              aria-label="Accès au curiculum + Boutons de renvoie aux réseau sociaux de la webdéveloppeuse Emanuela Palazzo Lacanfora. + Envoi de mail - Milieu du site">
+            </nav>>
+            <ul class="flex">
+              <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" rel="noopener" rel="noreferrer"
+                  aria-label="Lien vers le cv d'Emanuela Palazzo Lacanfora" class="btn btn__radius">
+                  Mon CV
+                </a></li>
+              <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Se rendre sur le compte Github de Emanuela PL"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Se rendre sur le compte linkedin de Emanuela PL"><i
+                    class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
+                  target="_blank" rel="noopener" rel="noreferrer"
+                  aria-label="Se rendre sur le compte Instagram de Emanuela PL"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li><a class="btn btn__radius btn__roundemailLink"
+                aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i 
+                class="fa-solid fa-envelope"></i></a></li>
+            </ul>
             </nav>
           </div>
         </div>
@@ -385,22 +414,28 @@
           <div class="grid items">
             <!-- Contenu à filtrer -->
             <div class="card projects-card item coding mobil">
-              <img src="../assets/site-coding-mobilfirst-musique.webp" class="projects-img" alt="design de site musical mobil-first codé en code pur" />
+              <img src="../assets/site-coding-mobilfirst-musique.webp" class="projects-img"
+                alt="design de site musical mobil-first codé en code pur" />
             </div>
             <div class="card projects-card item wordpress mobil">
-              <img src="../assets/site-wordpress-mobilfirst-vinyls.webp" class="projects-img" alt="design de site de musique et de vinyles, mobil-first codé pour wordpress avec thème et template" />
+              <img src="../assets/site-wordpress-mobilfirst-vinyls.webp" class="projects-img"
+                alt="design de site de musique et de vinyles, mobil-first codé pour wordpress avec thème et template" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="../assets/site-coding-mobilfirst-fleuriste.webp" class="projects-img" alt="design de site pour fleuriste, mobil-first codé en code pur" />
+              <img src="../assets/site-coding-mobilfirst-fleuriste.webp" class="projects-img"
+                alt="design de site pour fleuriste, mobil-first codé en code pur" />
             </div>
             <div class="card projects-card item wordpress mobil">
-              <img src="../assets/site-wordpress-mobilfirst-chanteuse.webp" class="projects-img" alt="design de site pour une une chanteuse, mobil-first codé pour wordpress avec thème et template" />
+              <img src="../assets/site-wordpress-mobilfirst-chanteuse.webp" class="projects-img"
+                alt="design de site pour une une chanteuse, mobil-first codé pour wordpress avec thème et template" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="../assets/site-coding-mobilfirst-festival.webp" class="projects-img" alt="design de site pour un festival, mobil-first codé en code pur" />
+              <img src="../assets/site-coding-mobilfirst-festival.webp" class="projects-img"
+                alt="design de site pour un festival, mobil-first codé en code pur" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="../assets/site-coding-mobilfirst-artisane.webp" class="projects-img" alt="design de site pour une femme artisan, mobil-first codé en code pur" />
+              <img src="../assets/site-coding-mobilfirst-artisane.webp" class="projects-img"
+                alt="design de site pour une femme artisan, mobil-first codé en code pur" />
             </div>
           </div>
         </div>
@@ -432,8 +467,8 @@
                         facilité avec laquelle elle semble gérer tout ce monde.
                       </p>
                       <div class="quote">
-                        <img src="../assets/guillemet.webp" alt="double guillements ouvert pour la citation du témoignage"
-                          class="testimonials-img">
+                        <img src="../assets/guillemet.webp"
+                          alt="double guillements ouvert pour la citation du témoignage" class="testimonials-img">
                       </div>
                     </div>
                   </div>
@@ -452,8 +487,8 @@
 
                       </p>
                       <div class="quote">
-                        <img src="../assets/guillemet.webp" alt="double guillements ouvert pour la citation du témoignage"
-                          class="testimonials-img">
+                        <img src="../assets/guillemet.webp"
+                          alt="double guillements ouvert pour la citation du témoignage" class="testimonials-img">
                       </div>
                     </div>
                   </div>
@@ -503,7 +538,8 @@
               limite, et mon ingéniosité sans fin transforment chaque bug en apprentissage, chaque défi en occasion de
               me
               surpasser. Au travers des lignes de code que j'écris, je tisse ma toile d'expertise.</p>
-            <nav class="navbar__footer">
+            <nav class="navbar__footer"
+              aria-label="Boutons de renvoie aux réseau sociaux de la webdéveloppeuse Emanuela Palazzo Lacanfora. + Envoi de mail - Bas du site">
               <ul class="flex start__content">
                 <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer"
@@ -517,9 +553,9 @@
                     target="_blank" rel="noopener" rel="noreferrer"
                     aria-label="Se rendre sur le compte Instagram de Emanuela PL"><i
                       class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MON ART"
-                    class="btn btn__radius btn__round" aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i
-                      class="fa-solid fa-envelope"></i></a></li>
+                <li><a class="btn btn__radius btn__round emailLink"
+                    aria-label="Envoyer un mail à Emanuela PALAZZO LACANFORA"><i 
+                    class="fa-solid fa-envelope"></i></a></li>
               </ul>
             </nav>
           </div>
@@ -554,6 +590,7 @@
   <script src="../js/cookie-banner.js"></script>
   <script src="../js/burger.js"></script>
   <script src="../js/burger-menu.js"></script>
+  <script src="../js/email.js"></script>
   <script src="../js/filter.js"></script>
   <script defer src="../js/testimonials.js"></script>
 </body>
