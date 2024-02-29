@@ -4,16 +4,16 @@
 
 :root {
   --primary-color-light: hsl(277.81deg 68.22% 79.02%);
-  --primary-color: hsl(280.8deg 72.63% 37.25%);
-  --primary-color-dark: hsl(278.58deg 76.96% 26.07%);
-  --secondary-color: hsl(154.29deg 50% 10.98%);
-  --secondary-color-light: hsl(154deg 65.22% 9.02%);
-  --secondary-color-dark: hsl(155deg 33.33% 14.12%);
+  --primary-color: hsl(260.23deg 98.85% 65.88%);
+  --primary-color-dark: hsl(274.29deg 64.29% 38.43%);
+  --secondary-color: hsl(150deg 56.86% 20%);
+  --secondary-color-light: hsl(150.42deg 57.72% 24.12%);
+  --secondary-color-dark: hsl(146.81deg 58.02% 15.88%);
   --text-light: #a9b8cd;
   --white: #ffffff;
   --max-width: 1200px;
   --basic-size: 16px;
-  --gradient: linear-gradient(to right, hsl(278.58deg 76.96% 26.07%), hsl(280.8deg 72.63% 37.25%));
+  --gradient: linear-gradient(to right, hsl(274.29deg 64.29% 38.43%), hsl(280.8deg 72.63% 37.25%));
 }
 
 /* BLOCK */
@@ -46,7 +46,7 @@ i {
 }
 
 .btn i {
-  color: var(--secondary-color);
+  
 }
 
 .navbar__footer i {
@@ -57,6 +57,7 @@ h1 {
   position: absolute;
   left: 72px;
   top: 29px;
+  font-size: 0.84rem;
 }
 
 section h2 {
@@ -126,7 +127,7 @@ section,
 }
 
 .card:hover {
-  border-bottom: 5px solid var(--primary-color-dark);
+  border-bottom: 5px solid var(--primary-color);
 }
 
 .card span {
@@ -140,7 +141,7 @@ section,
 .btn {
   padding: 0.5rem 1.1rem;
   font-size: 1rem;
-  background-image: var(--gradient);
+  background-color: var(--primary-color-dark);
   cursor: pointer;
 }
 
@@ -518,7 +519,7 @@ main {
   font-weight: 400;
   color: var(--text-light);
   background-color: var(--secondary-color-light);
-  border-left: 2px solid var(--primary-color-dark);
+  border-left: 2px solid var(--primary-color);
   border-radius: 5px;
 }
 
@@ -603,7 +604,7 @@ header.projects-header.flex {
   height: 350px;
   margin-top: 50px;
   background-color: var(--secondary-color-dark);
-  border-bottom: 5px solid var(--primary-color-dark);
+  border-bottom: 5px solid var(--primary-color);
 }
 
 .testimonials-text {
