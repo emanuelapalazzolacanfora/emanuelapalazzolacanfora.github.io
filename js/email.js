@@ -5,7 +5,7 @@ function generateEmailLinks() {
 
     const dynamicEmail = generateDynamicEmail(user, domain);
 
-    const emailLinks = document.querySelectorAll('.emaillink');
+    const emailLinks = document.querySelectorAll('.emailLink');
 
     emailLinks.forEach(link => {
         const mailtoLink = `mailto:${dynamicEmail}?subject=${encodeURIComponent(subject)}`;
