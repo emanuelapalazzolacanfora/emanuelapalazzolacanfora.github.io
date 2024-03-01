@@ -194,7 +194,6 @@ button i {
 .navbar__footer .btn__round:hover i {
   color: var(--primary-color-light);
 }
-<!-- Styles pour la bannière de consentement -->
 .cookie-banner {
       position: fixed;
       bottom: 0;
