@@ -618,7 +618,8 @@ function rejectCookies() {
 window.onload = function () {
     const cookiesAccepted = getCookie('cookies_accepted');
     console.log("Cookies acceptés :", cookiesAccepted);
-    if (!cookiesAccepted) {
+    
+    if (!cookiesAccepted || cookiesAccepted !== 'true') {
         console.log("Afficher la bannière");
         document.getElementById('cookieBanner').style.display = 'block';
     } else {
