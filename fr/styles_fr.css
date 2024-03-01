@@ -195,6 +195,7 @@ button i {
   color: var(--primary-color-light);
 }
 .cookie-banner {
+      display:none;
       position: fixed;
       bottom: 0;
       left: 0;
