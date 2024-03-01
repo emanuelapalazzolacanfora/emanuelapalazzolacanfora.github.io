@@ -1,21 +1,21 @@
-// Fonction pour générer des liens e-mail dynamiques
 function generateEmailLinks() {
     const user = "emanuela.palazzo.lacanfora";
     const domain = "gmail.com";
     const subject = "MON ART";
 
-    // Génération dynamique de l'adresse e-mail avec une méthode complexe
     const dynamicEmail = generateDynamicEmail(user, domain);
 
-    // Sélectionnez tous les éléments avec la classe 'emailLink'
-    const emailLinks = document.querySelectorAll('.emailLink');
+    const emailLinks = document.querySelectorAll('.emaillink');
 
-    // Appliquez le lien 'mailto' à tous les éléments
     emailLinks.forEach(link => {
         const mailtoLink = `mailto:${dynamicEmail}?subject=${encodeURIComponent(subject)}`;
         link.setAttribute("href", mailtoLink);
+
+        // Ajoutez un log pour vérifier le lien généré
+        console.log("Mailto link:", mailtoLink);
     });
 }
+
 
 // Fonction pour générer dynamiquement l'adresse e-mail avec une méthode complexe
 function generateDynamicEmail(user, domain) {
