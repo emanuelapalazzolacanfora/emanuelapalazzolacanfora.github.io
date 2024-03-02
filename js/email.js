@@ -9,7 +9,7 @@ function generateEmailLinks() {
     const emailLinks = document.querySelectorAll('.emailLink');
 
     emailLinks.forEach(link => {
-        const mailtoLink = `mailto:${encodeURIComponent(dynamicEmail)}?subject=${encodeURIComponent(subject)}`;
+        const mailtoLink = `mailto:${encodeURIComponent(dynamicEmail)}?subject=${subject}`;
         link.setAttribute("href", mailtoLink);
         link.addEventListener("click", (event) => handleEmailLinkClick(event, dynamicEmail));
     });
