@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Formulaire</title>
-</head>
-<body>
-
-<script>
 function generateEmailLinks() {
     const user = "emanuela.palazzo.lacanfora";
     const domain = "gmail.com";
@@ -71,7 +61,3 @@ function handleEmailLinkClick(event, email) {
 }
 
 document.addEventListener("DOMContentLoaded", generateEmailLinks);
-</script>
-
-</body>
-</html>
