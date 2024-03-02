@@ -1,6 +1,6 @@
 function generateEmailLinks() {
-    const user = "emanuela.palazzo.lacanfora";
-    const domain = "gmail.com";
+    const user = "emanuelapl";
+    const domain = "proton.me";
     const subject = "MON ART";
 
     // Génération dynamique de l'adresse e-mail
