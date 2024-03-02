@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.navigator.msSaveOrOpenBlob(new Blob(['<!DOCTYPE html><html><head><title></title></head><body><a href="' + mailtoLink + '"></a></body></html>']), 'mailto.html');
             } else {
                 // Autres navigateurs
-                window.location.href = mailtoLink;
+                window.open(mailtoLink, '_blank');;
             }
         });
     });
