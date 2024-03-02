@@ -11,7 +11,6 @@ function generateEmailLinks() {
     emailLinks.forEach(link => {
         const mailtoLink = `mailto:${dynamicEmail}?subject=${subject}`;
         link.setAttribute("href", mailtoLink);
-        link.textContent = dynamicEmail;
         link.classList.add('protected-email');
     });
 }
