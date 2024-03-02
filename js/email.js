@@ -21,19 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Fonction pour générer le lien e-mail
-    function generateEmailLinks() {
-        const user = "emanuela.palazzo.lacanfora";
-        const domain = "gmail.com";
-        const subject = "MON ART";
+function generateEmailLinks() {
+    const user = "emanuela.palazzo.lacanfora";
+    const domain = "gmail.com";
+    const subject = "MON ART";
 
-        const dynamicEmail = generateDynamicEmail(user, domain);
+    const dynamicEmail = generateDynamicEmail(user, domain);
 
-        // Cible le lien e-mail dans la balise nav
-        const emailLink = document.querySelector('.emailLink');
+    // Cible tous les liens e-mail dans la balise nav avec la classe .emailLink
+    const emailLinks = document.querySelectorAll('.emailLink');
 
+    emailLinks.forEach(link => {
         const mailtoLink = `mailto:${dynamicEmail}?subject=${encodeURIComponent(subject)}`;
-        emailLink.setAttribute("href", mailtoLink);
+        link.setAttribute("href", mailtoLink);
 
         // Ajoute un log pour vérifier le lien généré
         console.log("Mailto link:", mailtoLink);
-    }
+    });
