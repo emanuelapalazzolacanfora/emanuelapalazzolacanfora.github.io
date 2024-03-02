@@ -83,6 +83,10 @@ section h3 {
   text-align: center;
 }
 
+.protected-email {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+
 /* BLOCK */
 li {
   list-style-type: none;
