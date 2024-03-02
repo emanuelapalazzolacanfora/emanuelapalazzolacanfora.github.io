@@ -86,7 +86,7 @@ section h3 {
 .protected-email {
             unicode-bidi: bidi-override;
             direction: rtl;
-
+}
 /* BLOCK */
 li {
   list-style-type: none;
