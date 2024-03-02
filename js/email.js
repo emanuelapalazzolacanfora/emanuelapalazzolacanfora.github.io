@@ -38,3 +38,4 @@ function generateEmailLinks() {
         // Ajoute un log pour vérifier le lien généré
         console.log("Mailto link:", mailtoLink);
     });
+}
