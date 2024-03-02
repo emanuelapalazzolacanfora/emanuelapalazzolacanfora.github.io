@@ -11,7 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = link.getAttribute('data-email');
             const subject = "MON ART";
             const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-            window.location.href = mailtoLink;
+
+            // Ouvre la fenêtre de messagerie uniquement si l'utilisateur a cliqué sur le lien
+            if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                // Internet Explorer
+                window.navigator.msSaveOrOpenBlob(new Blob(['<!DOCTYPE html><html><head><title></title></head><body><a href="' + mailtoLink + '"></a></body></html>']), 'mailto.html');
+            } else {
+                // Autres navigateurs
+                window.location.href = mailtoLink;
+            }
         });
     });
 
