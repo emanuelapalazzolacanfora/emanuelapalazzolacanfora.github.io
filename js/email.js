@@ -9,18 +9,9 @@ function generateEmailLinks() {
     const emailLinks = document.querySelectorAll('.emailLink');
 
     emailLinks.forEach(link => {
-        // Obscurcit l'adresse e-mail pour le lien
-        const obscuredEmail = obscureEmail(dynamicEmail);
-
-        // Stocke la vraie adresse dans un attribut personnalisé
-        link.setAttribute("data-real-email", dynamicEmail);
-
-        // Crée le lien `mailto` avec l'adresse obscurcie
-        const mailtoLink = `mailto:${obscuredEmail}?subject=${subject}`;
+        const mailtoLink = `mailto:${dynamicEmail}?subject=${subject}`;
         link.setAttribute("href", mailtoLink);
-
-        // Ajoute l'événement de clic
-        link.addEventListener("click", handleEmailLinkClick);
+        link.addEventListener("click", (event) => handleEmailLinkClick(event, dynamicEmail));
     });
 }
 
@@ -28,24 +19,44 @@ function generateDynamicEmail(user, domain) {
     return `${user}@${domain}`;
 }
 
-function obscureEmail(email) {
-    // Ajoutez votre propre logique d'obscurcissement ici
-    // Par exemple, mélangez les caractères, utilisez des caractères spéciaux, etc.
-    return email.replace(/./g, '*');
-}
-
-function handleEmailLinkClick(event) {
+function handleEmailLinkClick(event, email) {
     event.preventDefault();
 
-    // Récupère la vraie adresse à partir de l'attribut personnalisé
-    const realEmail = event.currentTarget.getAttribute("data-real-email");
+    // Créez un élément de checkbox
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = 'confirmationCheckbox';
+    checkbox.style.marginRight = '5px';  // Ajoutez une marge pour l'esthétique
 
-    // Affiche une boîte de dialogue de confirmation avec la vraie adresse
-    const confirmation = confirm(`Êtes-vous sûr de vouloir envoyer un e-mail à ${realEmail}?`);
-    
-    // Si l'utilisateur confirme, ouvre le client de messagerie avec l'adresse réelle
+    // Créez une étiquette pour la checkbox
+    const label = document.createElement('label');
+    label.htmlFor = 'confirmationCheckbox';
+    label.appendChild(document.createTextNode('Je confirme que je ne suis pas un robot'));
+
+    // Créez un conteneur pour la checkbox et l'étiquette
+    const checkboxContainer = document.createElement('div');
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(label);
+
+    // Ajout de la checkbox à la boîte de dialogue de confirmation
+    const confirmation = confirm(`
+        Êtes-vous sûr de vouloir envoyer un e-mail à ${email}?
+        Cette action peut aider à prévenir le spam.
+    `);
+
+    // Si l'utilisateur confirme, ouvre le client de messagerie
     if (confirmation) {
-        window.location.href = event.currentTarget.getAttribute("href");
+        checkboxContainer.style.textAlign = 'center';  // Alignez la checkbox au centre
+        checkbox.checked = false;  // Assurez-vous qu'elle n'est pas cochée par défaut
+        checkbox.style.marginTop = '10px';  // Ajoutez une marge pour l'esthétique
+
+        // Ajoutez la checkbox à la boîte de dialogue
+        const checkboxResult = confirm(checkboxContainer);
+
+        // Si la checkbox est cochée, ouvre le client de messagerie
+        if (checkboxResult && checkbox.checked) {
+            window.location.href = event.currentTarget.getAttribute('href');
+        }
     }
 }
 
