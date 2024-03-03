@@ -25,6 +25,8 @@
   --secondary-color-dark: #01221D;
   --white: #ffffff;
   --max-width: 1200px;
+  --basic-font: 'Poppins';
+  --highlight-font: 'Bitter';
   --basic-size: 16px;
 }
 
@@ -43,7 +45,7 @@ body {
 
 body {
   background-color: var(--secondary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--basic-font), sans-serif;
   color: var(--white);
 }
 
@@ -64,6 +66,7 @@ i {
 .navbar__footer i {
   color: var(--white);
 }
+
 h1 {
   position: absolute;
   left: 72px;
@@ -84,9 +87,10 @@ section h3 {
 }
 
 .protected-email {
-            unicode-bidi: bidi-override;
-            direction: rtl;
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
+
 /* BLOCK */
 li {
   list-style-type: none;
@@ -127,12 +131,24 @@ section,
   gap: 1rem;
   padding-block: 2rem;
 }
-
 .grid__deux {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
 }
-
+.grid__8 {
+  grid-template-columns: repeat(1, 1fr);
+  align-items: flex-end;
+  padding-block: 0;
+}
+.grid-col-span-2{
+  grid-column: span 1;
+}
+.grid-col-span-5{
+  grid-column: span 1;
+}
+.grid-col-span-8{
+  grid-column: span 1;
+}
 .card {
   padding: 2rem 1rem;
   background-color: var(--secondary-color-light);
@@ -164,10 +180,6 @@ button {
   color: var(--white);
 }
 
-button i {
-  color: var(--gradient);
-}
-
 #btn,
 .btn__radius {
   padding: 0.5rem 1.5rem;
@@ -185,7 +197,6 @@ button i {
 .projects-header .btn,
 .navbar__footer .btn__round {
   background-color: var(--secondary-color-light);
-  background-image: none;
 }
 
 .projects-header .btn__active {
@@ -195,31 +206,33 @@ button i {
 .navbar__footer .btn__round:hover {
   background-color: var(--primary-color);
 }
+
 .navbar__footer .btn__round:hover i {
   color: var(--primary-color-light);
 }
+
 .cookie-banner {
-      display:none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 10px;
-      background: var(--primary-color);
-      text-align: center;
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-      z-index: 999;
-    }
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: var(--primary-color);
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 
-    .cookie-banner button {
-      background: var(--secondary-color);
-      border: none;
-      margin: 0 0.56rem;
-      padding: 8px 16px;
-      cursor: pointer;
-    }
+.cookie-banner button {
+  background: var(--secondary-color);
+  border: none;
+  margin: 0 0.56rem;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
 /* SCROLLBAR */
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 4px;
@@ -253,7 +266,6 @@ header {
 }
 
 /* MENU DU SITE */
-
 header .navbar.flex,
 .menu-toggle,
 .bar,
@@ -477,7 +489,7 @@ main {
   align-items: center;
   margin-block: 0;
   height: 100px;
-  font-family: biter, serif;
+  font-family: var(--highlight-font), serif;
   font-size: 3rem;
 }
 
@@ -495,7 +507,7 @@ main {
 }
 
 .values_description {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--basic-font), sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--primary-color-light);
@@ -509,7 +521,7 @@ main {
 #principles h3 {
   align-items: flex-start;
   padding: 0.65rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--basic-font), sans-serif;
   margin-bottom: 5px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -526,7 +538,7 @@ main {
   display: block;
 }
 
-/* whoiam */
+/* WHOIAM */
 #quijesuis,
 #services,
 #projets,
@@ -591,7 +603,7 @@ main {
 
 #services .card:hover span {
   color: var(--secondary-color);
-  background-image: var(--gradient);
+  background-color: var(--primary-color);
 }
 
 /* PROJECTS */
@@ -615,7 +627,7 @@ header.projects-header.flex {
 
 .carousel-container {
   position: relative;
-  max-width: 1200px;
+  max-width: var(--max-width);
   height: 500px;
   margin: 0 auto;
 }
@@ -651,14 +663,14 @@ header.projects-header.flex {
 
 #avis h4 {
   margin-bottom: 1.1rem;
-  font-family: 'biter, serif', serif;
+  font-family: var(--highlight-font), serif;
   font-size: 2.3rem;
   color: var(--primary-color-light);
   text-align: center;
 }
 
 #avis h4 span {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--basic-font), sans-serif;
   font-size: 0.65rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -686,7 +698,7 @@ header.projects-header.flex {
   width: 38px;
   height: 30px;
   margin-top: 20px;
-  margin-left: 16px;
+  margin-left: var(--basic-size);
 }
 
 .carousel-btn {
@@ -741,15 +753,7 @@ footer {
   position: relative;
 }
 
-.footer-description,
-.social-buttons,
-.site-menu,
-.back-to-top {
-  float: none;
-}
-
 .footer-description {
-  width: 99%;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -765,14 +769,11 @@ footer {
 }
 
 .site-menu {
-  float: right;
-  width: 47%;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .site-menu:nth-of-type(2) {
-  float: left;
   margin-right: var(--basic-size);
 }
 
@@ -781,9 +782,9 @@ footer {
   top: -70px;
   right: 5px;
   width: 8%;
-  text-align: right;
   margin-bottom: 10px;
   font-size: xx-large;
+  text-align: right;
   text-decoration: none;
   cursor: pointer;
 }
@@ -807,7 +808,17 @@ footer {
     font-size: 0.70rem;
   }
 }
-
+@media screen and (min-width: 438px) {
+  .grid__8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-span-5{
+    grid-column: 2 span;
+  }
+  .grid-col-span-8{
+    grid-column: 2 span;
+  }
+}
 @media screen and (min-width: 520px) {
   .testimonials-description {
     font-size: 0.84rem;
@@ -822,9 +833,16 @@ footer {
   .grid__deux {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .grid__8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-span-5{
+    grid-column: span 5;
+  }
+  .grid-col-span-8{
+    grid-column: span 8;
+  }
   /* MENU DU SITE */
-
   .header-container {
     padding: 0 1rem;
   }
@@ -881,14 +899,13 @@ footer {
   }
 
   .menu-list a {
-
-    font-size: initial;
-    font-weight: 400;
     display: inline;
     padding: 0;
+    font-size: initial;
+    font-weight: 400;
     transform: translateY(0);
-    opacity: 1;
     transition: none;
+    opacity: 1;
   }
 
   .menu-list.show a {
@@ -908,24 +925,16 @@ footer {
     min-width: 50%;
   }
 
-  .footer-description,
-  .social-buttons,
-  .back-to-top {
-    float: left;
+  .footer-description P {
+    padding: 0 1.1rem 0 0;
   }
 
-  .footer-description {
-    width: 60%;
-  }
-
-  .site-menu {
-    float: left;
-    margin-right: 0;
-    width: 15%;
+  .grid-col-span-2{
+    grid-column: span 2 ;
   }
 
   .back-to-top {
-    position: unset;
+    top:-84px;
     font-size: 3.2rem;
   }
 }
@@ -985,7 +994,7 @@ footer {
 
   .testimonials-description {
     font-size: 1rem;
-}
+  }
 }
 
 @media screen and (min-width: 1150px) {
@@ -995,19 +1004,20 @@ footer {
     padding-top: 0;
   }
 }
-  @media screen and (min-width: 1250px) {
 
-    /* MENU DU SITE */
-    header .navbar.flex {
-      gap: 3rem;
-    }
+@media screen and (min-width: 1250px) {
 
-    h1,
-    .menu-list.flex {
-      padding-top: 0;
-    }
-
-    .menu-list.flex {
-      gap: var(--basic-size);
-    }
+  /* MENU DU SITE */
+  header .navbar.flex {
+    gap: 3rem;
   }
+
+  h1,
+  .menu-list.flex {
+    padding-top: 0;
+  }
+
+  .menu-list.flex {
+    gap: var(--basic-size);
+  }
+}
