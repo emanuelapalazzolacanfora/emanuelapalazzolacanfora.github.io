@@ -413,7 +413,7 @@ main {
   padding-right: 3px;
 }
 
-/* HELLO */
+/* hello */
 #hello {
   height: auto;
   padding-top: 0;
@@ -455,7 +455,7 @@ main {
   max-width: 100%;
 }
 
-/* COMMITMENTS */
+/* INTERPERSONNEL */
 #commitments {
   padding-top: 74px;
 }
@@ -946,13 +946,13 @@ footer {
 
 }
 
-@media screen and (min-width: 980px) {
-  header .navbar.flex {
+@media screen and (min-width: 960px) {
+  .navbar.flex {
     gap: 0.84rem;
   }
 
   h1,
-  .menu-list.flex {
+  .menu-list {
     padding-top: var(--basic-size);
   }
 }
@@ -1005,7 +1005,7 @@ footer {
   }
 }
 
-@media screen and (min-width:1250px) {
+@media screen and (min-width: 1250px) {
 
   /* MENU DU SITE */
   header .navbar.flex {
