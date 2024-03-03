@@ -3,89 +3,94 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Balise de méta avec la directive Content-Security-Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' mailto:;
+    style-src 'self' 'unsafe-inline' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+    script-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it https://kit.fontawesome.com 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com;
+    img-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+    connect-src 'self' https://emanuelapalazzolacanfora.github.io https://www.google-analytics.com https://ka-f.fontawesome.com https://api.daily-guard.net https://region1.google-analytics.com;
+    object-src 'none';
+    font-src 'self' https://kit.fontawesome.com https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://ka-f.fontawesome.com;
+  ">
+
+  <!-- Balise viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ciao, sono una sviluppatrice web dedicata con un tocco creativo, trasformo linee di codice in esperienze online memorabili. Il mio percorso nel campo digitale è iniziato con una semplice curiosità ed è cresciuto in una vera passione. Creo siti web interattivi su misura con creatività e ingegnosità.">
-  <meta name="keywords" content="sviluppatrice web, creatività, esperienze online, sviluppo front-end, sviluppo back-end, siti web interattivi">
+
+  <!-- Balises liées au référencement (SEO) -->
+  <meta name="description"
+    content="Ciao, sono una sviluppatrice web dedicata con un tocco creativo, trasformo linee di codice in esperienze online memorabili. Il mio percorso nel campo digitale è iniziato con una semplice curiosità ed è cresciuto in una vera passione. Creo siti web interattivi su misura con creatività e ingegnosità.">
+  <meta name="keywords"
+    content="sviluppatrice web, creatività, esperienze online, sviluppo front-end, sviluppo back-end, siti web interattivi">
   <meta name="author" content="Emanuela Palazzo Lacanfora">
 
   <!-- Tag Open Graph per i social media -->
   <meta property="og:title" content="Sviluppatrice Web Creativa">
-  <meta property="og:description" content="Trasformo linee di codice in esperienze online memorabili. Creo siti web su misura con creatività e ingegnosità.">
-  <meta property="og:url" content="URL_del_tuo_sito">
+  <meta property="og:description"
+    content="Trasformo linee di codice in esperienze online memorabili. Creo siti web su misura con creatività e ingegnosità.">
+  <meta property="og:url" content="https://emanuelapalazzolacanfora.github.io/it/index_it">
   <meta property="og:image" content="URL_dell'immagine_rappresentativa_del_tuo_sito.jpg">
 
   <!-- Tag Twitter Card per Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sviluppatrice Web Creativa">
-  <meta name="twitter:description" content="Trasformo linee di codice in esperienze online memorabili. Creo siti web su misura con creatività e ingegnosità.">
+  <meta name="twitter:description"
+    content="Trasformo linee di codice in esperienze online memorabili. Creo siti web su misura con creatività e ingegnosità.">
   <meta name="twitter:image" content="URL_dell'immagine_rappresentativa_del_tuo_sito.jpg">
 
   <!-- Titolo della pagina -->
   <title>Sviluppatrice Web Creativa - Creazione di Siti Web Memorabili</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="path/to/your_favicon_en.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/emanuelapl.ico" type="image/x-icon">
 
   <!-- CSS Style Sheet -->
   <link rel="stylesheet" href="styles_it.css" />
 
-  <!-- Canonical Link Tag -->
-  <link rel="canonical" href="Canonical_URL_of_your_page">
+  <!-- Balise de lien canonique -->
+  <link rel="canonical" href="https://emanuelapalazzolacanfora.github.io/it/index_it#buongiorno" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/en/index_en#hello" hreflang="en" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/fr/index_fr#bonjour" hreflang="fr" />
 
   <!-- Font Awesome -->
 
   <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
 
   <!-- LIGNE FOR IE -->
-      <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+  <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
           HTML5 fonctionne correctement avec les anciennes versions de
           Internet Explorer-->
   <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>  
-    <![endif]--> 
+    <![endif]-->
 
-  <!-- Google Analytics Tracking Code -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+  <!-- Balise de suivi Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J900DGLJJ"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'YOUR_ANALYTICS_ID');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2J900DGLJJ');
   </script>
-
-  <!-- Styles for Cookie Consent Banner -->
-  <style>
-      .cookie-banner {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding: 10px;
-          background: var(--primary-color-dark);
-          text-align: center;
-          box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-          z-index: 999;
-      }
-
-      .cookie-banner button {
-          background: var(--secondary-color);
-          border: none;
-          margin: 0 0.56rem;
-          padding: 8px 16px;
-          cursor: pointer;
-      }
-  </style>
 </head>
+
 <body>
   <!-- Banner di consenso ai cookie -->
   <div class="cookie-banner" id="cookieBanner">
-    <p>Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando, accetti il nostro utilizzo dei cookie.</p>
-    <button onclick="acceptCookies()">Accetto</button>
-</div>
+    <p>Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando, accetti il nostro utilizzo
+      dei cookie.</p>
+    <button type="submit" onclick="acceptCookies()">Accetto</button>
+    <button type="submit" onclick="rejectCookies()">Rifiuto</button>
+
+    <!-- Collegamenti all'Informativa sulla privacy e ai diritti sulla privacy -->
+    <p>Consulta la nostra <a href="path/to/your_privacy_policy.html" target="_blank">Politica
+        Privacy</a> per saperne di più sull'uso dei cookie e sui tuoi diritti sulla privacy.</p>
+  </div>
   <header>
     <div class="header-container">
       <div class="content" data-lang="it">
-        <nav class="navbar flex">
+        <nav class="navbar flex"
+          aria-label="Barra di navigazione intestazione del sito della sviluppatrice web Emanuela Palazzo Lacanfora">
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -107,7 +112,8 @@
             </li>
           </ul>
         </nav>
-        <nav id="language-selector" class="lang-selector">
+        <nav id="language-selector" class="lang-selector"
+          aria-label="Selettore lingua (francese, inglese, italiano) per il sito web della sviluppatrice web Emanuela Palazzo Lacanfora">
           <ul class="flex">
             <li class="btn"><a href="../fr/index_fr.html" onclick="changeLanguage('fr')">Fr</a></li>
             <li class="btn"><a href="../en/index_en.html" onclick="changeLanguage('en')">En</a></li>
@@ -118,7 +124,8 @@
     </div>
   </header>
   <main>
-    <nav class="navbar__socials">
+    <nav class="navbar__socials"
+    aria-label="Pulsanti riferiti ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invia email - Inizio sito">
       <ul>
         <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Vai al profilo Github di Emanuela PL"><i class="fa-brands fa-github"></i></a>
@@ -129,8 +136,8 @@
         <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Vai al profilo Instagram di Emanuela PL"><i
               class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=LA MIA ARTE" class="btn"
-            aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a class="btn emailLink" aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i 
+          class="fa-solid fa-envelope"></i></a></li>
       </ul>
     </nav>
     <section id="buongiorno">
@@ -138,10 +145,13 @@
         <div class="content" data-lang="it">
           <h2>Buongiorno</h2>
           <p class="hello-description">
-            Sono una Web Developper con un tocco creativo e una propensione a trasformare linee di codice in esperienze online memorabili.
+            Sono una Web Developper con un tocco creativo e una propensione a trasformare linee di codice in esperienze
+            online memorabili.
           </p>
           <p class="hello-description">
-            Il mio viaggio nel campo digitale è iniziato anni fa con una semplice curiosità e si è trasformata in una vera passione. Attraverso i miei progetti, la mia formazione continua, le sfide che affronto e i problemi che risolvo, affino le mie competenze nello sviluppo front-end e back-end.
+            Il mio viaggio nel campo digitale è iniziato anni fa con una semplice curiosità e si è trasformata in una
+            vera passione. Attraverso i miei progetti, la mia formazione continua, le sfide che affronto e i problemi
+            che risolvo, affino le mie competenze nello sviluppo front-end e back-end.
           </p>
           <a class="btn btn__radius hello-link" href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank"
             rel="noopener" rel="noreferrer" aria-label="Contatta Emanuela Palazzo Lacanfora su WhatsApp">Creiamo
@@ -163,7 +173,9 @@
               <div class="card card__values">
                 <div class="values-subcontainer">
                   <p class="values_description">
-                    Appassionata e creativa, ogni progetto è una tela per esprimere la mia creatività. Il mio approccio allo sviluppo web mira a creare esperienze utente eccezionali, aggiungendo un tocco artistico innovativo ad ogni soluzione tecnica. Le mie creazioni sono personalizzate, autentiche e impattanti.
+                    Appassionata e creativa, ogni progetto è una tela per esprimere la mia creatività. Il mio approccio
+                    allo sviluppo web mira a creare esperienze utente eccezionali, aggiungendo un tocco artistico
+                    innovativo ad ogni soluzione tecnica. Le mie creazioni sono personalizzate, autentiche e impattanti.
                   </p>
                 </div>
               </div>
@@ -173,7 +185,9 @@
               <div class="card card__values">
                 <div class="values-subcontainer">
                   <p class="values_description">
-                    Appassionata e creativa, ogni progetto è una tela per esprimere la mia creatività. Il mio approccio allo sviluppo web mira a creare esperienze utente eccezionali, aggiungendo un tocco artistico innovativo ad ogni soluzione tecnica. Le mie creazioni sono personalizzate, autentiche e impattanti.
+                    Appassionata e creativa, ogni progetto è una tela per esprimere la mia creatività. Il mio approccio
+                    allo sviluppo web mira a creare esperienze utente eccezionali, aggiungendo un tocco artistico
+                    innovativo ad ogni soluzione tecnica. Le mie creazioni sono personalizzate, autentiche e impattanti.
                   </p>
                 </div>
               </div>
@@ -183,7 +197,10 @@
               <div class="card card__values">
                 <div class="values-subcontainer">
                   <p class="values_description">
-                    Di fronte a sfide complesse, emerge la mia tenacia inarrestabile. Determinata a trovare soluzioni, investo tempo ed energie. Gli ostacoli diventano trampolini di apprendimento e crescita professionale. La mia determinazione persiste, trasformando le sfide in opportunità per perfezionare le mie competenze.
+                    Di fronte a sfide complesse, emerge la mia tenacia inarrestabile. Determinata a trovare soluzioni,
+                    investo tempo ed energie. Gli ostacoli diventano trampolini di apprendimento e crescita
+                    professionale. La mia determinazione persiste, trasformando le sfide in opportunità per perfezionare
+                    le mie competenze.
                   </p>
                 </div>
               </div>
@@ -195,7 +212,8 @@
               <div class="principles-subcontainer">
                 <h3>Design</h3>
                 <p class="principles-description">
-                  Un approccio collaborativo, incoraggiando i vostri feedback lungo l'intero processo di progettazione per garantire che soddisfiamo le vostre aspettative.
+                  Un approccio collaborativo, incoraggiando i vostri feedback lungo l'intero processo di progettazione
+                  per garantire che soddisfiamo le vostre aspettative.
 
                 </p>
               </div>
@@ -205,7 +223,8 @@
               <div class="principles-subcontainer">
                 <h3>Sviluppo</h3>
                 <p class="principles-description">
-                  Un monitoraggio tecnologico per essere all'avanguardia nelle innovazioni tecnologiche, garantendovi una presenza digitale performante.
+                  Un monitoraggio tecnologico per essere all'avanguardia nelle innovazioni tecnologiche, garantendovi
+                  una presenza digitale performante.
 
 
                 </p>
@@ -216,7 +235,8 @@
               <div class="principles-subcontainer">
                 <h3>Teste e QA</h3>
                 <p class="principles-description">
-                  La vostra presenza digitale non deve solo essere bella, ma deve anche generare traffico e coinvolgimento
+                  La vostra presenza digitale non deve solo essere bella, ma deve anche generare traffico e
+                  coinvolgimento
                 </p>
               </div>
             </div>
@@ -230,21 +250,27 @@
     </section>
     <section id="chisono">
       <div class="whoiam-container">
-        <div class="grid grid__deux content" data-lang="fr">
+        <div class="grid grid__deux content" data-lang="it">
           <img src="assets/disegno-vettoriale-di-una-web-developer-testa-rasata-ragazza.webp"
             alt="Un'immagine vettoriale di una sviluppatrice web con capelli rasati, in rosa, nero e blu" />
           <div class="whoiam-subcontainer">
             <h2>Chi sono?</h2>
             <p class="whoiam-description">
-              Artigiana digitale, trasformo idee in siti web interattivi con creatività e ingegnosità. Mi preoccupo delle aspettative dei miei clienti. Mi piace invitarli a condividere un momento con me, per impregnarmi della loro visione. Questa condivisione mi permette di far emergere tutte le sfumature, per offrire un sito che ne sia il fedele riflesso.
+              Artigiana digitale, trasformo idee in siti web interattivi con creatività e ingegnosità. Mi preoccupo
+              delle aspettative dei miei clienti. Mi piace invitarli a condividere un momento con me, per impregnarmi
+              della loro visione. Questa condivisione mi permette di far emergere tutte le sfumature, per offrire un
+              sito che ne sia il fedele riflesso.
               Creo su misura, per mettere in luce la loro arte.
             </p>
             <p class="whoiam-description highlight">
-              Ogni progetto è una compilation di idee e tecnologia, armonizzata e ottimizzata per creare un'esperienza utente virtuale estetica, che genera traffico e coinvolgimento. Programmo progetti impattanti che si evolvono con le nuove tecniche, alle quali mi formo continuamente.
+              Ogni progetto è una compilation di idee e tecnologia, armonizzata e ottimizzata per creare un'esperienza
+              utente virtuale estetica, che genera traffico e coinvolgimento. Programmo progetti impattanti che si
+              evolvono con le nuove tecniche, alle quali mi formo continuamente.
             </p>
-            <nav class="navbar__whoiam">
+            <nav class="navbar__whoiam"
+            aria-label="Accesso al curriculum + Pulsanti per il collegamento ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invio email - Centro del sito">
               <ul class="flex">
-                <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" rel="noopener" rel="noreferrer"
+                <li><a href="" rel="noopener" rel="noreferrer"
                     aria-label="Link al curriculum di Emanuela Palazzo Lacanfora" class="btn btn__radius">
                     Il mio CV
                   </a></li>
@@ -259,8 +285,7 @@
                 <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer"
                     aria-label="Vai al profilo Instagram di Emanuela PL"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=IL MIO ARTE"
-                    class="btn btn__radius btn__round" aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i
+                <li><a class="btn btn__radius btn__round emailLink" aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i
                       class="fa-solid fa-envelope"></i></a></li>
               </ul>
             </nav>
@@ -274,7 +299,8 @@
           <h2>I miei Servizi</h2>
           <h3>Cosa faccio?</h3>
           <p class="services-presentation">
-            Specializzata in una vasta gamma di servizi di sviluppo web progettati per trasformare la vostra visione in realtà.
+            Specializzata in una vasta gamma di servizi di sviluppo web progettati per trasformare la vostra visione in
+            realtà.
           </p>
           <div class="grid">
             <div class="card">
@@ -289,35 +315,40 @@
               <span><i class="fa-solid fa-mobile-screen"></i></span>
               <h4>Mobile first</h4>
               <p class="services_description">
-                Un design web ottimizzato per i dispositivi mobili è un imperativo per attirare clienti. Infatti, la consultazione dei siti web con un dispositivo mobile è in forte crescita.
+                Un design web ottimizzato per i dispositivi mobili è un imperativo per attirare clienti. Infatti, la
+                consultazione dei siti web con un dispositivo mobile è in forte crescita.
               </p>
             </div>
             <div class="card">
               <span><i class="fa-brands fa-searchengin"></i></span>
               <h4>SEO</h4>
               <p class="services_description">
-                Strategie SEO adattate ai vostri obiettivi specifici, aiutandovi a raggiungere il vostro pubblico e a sviluppare la vostra presenza online.
+                Strategie SEO adattate ai vostri obiettivi specifici, aiutandovi a raggiungere il vostro pubblico e a
+                sviluppare la vostra presenza online.
               </p>
             </div>
             <div class="card">
               <span><i class="fa-solid fa-brush"></i></span>
               <h4>Website Design</h4>
               <p class="services_description">
-                Interfacce amichevoli che coinvolgono i visitatori e vi aiutano a raggiungere i vostri obiettivi online con il minimo sforzo.
+                Interfacce amichevoli che coinvolgono i visitatori e vi aiutano a raggiungere i vostri obiettivi online
+                con il minimo sforzo.
               </p>
             </div>
             <div class="card">
               <span><i class="fa-solid fa-list-check"></i></span>
               <h4>Audit SEO</h4>
               <p class="services_description">
-                Aumentate il traffico del vostro sito grazie all'ottimizzazione per i motori di ricerca (SEO). Migliorate il posizionamento di un sito agendo sulla sua indicizzazione e velocità.
+                Aumentate il traffico del vostro sito grazie all'ottimizzazione per i motori di ricerca (SEO).
+                Migliorate il posizionamento di un sito agendo sulla sua indicizzazione e velocità.
               </p>
             </div>
             <div class="card">
               <span><i class="fa-solid fa-language"></i></span>
               <h4>Sito multilingue</h4>
               <p class="services_description">
-                I miei servizi includono la traduzione di testi. Come potete vedere sul sito che state attualmente consultando, parlo fluentemente francese, inglese e italiano.
+                I miei servizi includono la traduzione di testi. Come potete vedere sul sito che state attualmente
+                consultando, parlo fluentemente francese, inglese e italiano.
               </p>
             </div>
           </div>
@@ -329,35 +360,42 @@
         <div class="content" data-lang="it">
           <header class="projects-header flex">
             <h2>I miei Progetti</h2>
-            <p class="projects-presentation">Il mio portfolio è una raccolta dove l'arte e la tecnologia si incontrano, creando esperienze online che risuonano con i miei clienti.
+            <p class="projects-presentation">Il mio portfolio è una raccolta dove l'arte e la tecnologia si incontrano,
+              creando esperienze online che risuonano con i miei clienti.
             </p>
             <div class="projects-menu flex">
-              <button class="btn btn__radius projects-btn btn__active" onclick="filterItems('all')">tutti</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('mobil')">mobil first</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('wordpress')">wordpress</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('coding')">coding</button>
+              <button type="button" class="btn btn__radius projects-btn btn__active" onclick="filterItems('all')">tutti</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('mobil')">mobil first</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('wordpress')">wordpress</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('coding')">coding</button>
               <!-- Ajoutez plus de boutons selon vos besoins -->
             </div>
           </header>
           <div class="grid items">
             <!-- Contenu à filtrer -->
             <div class="card projects-card item coding mobil">
-              <img src="assets/sito-codifica-mobile-first-musica.webp" class="projects-img" alt="design del sito musicale, mobile-first, codificato in codice puro" />
+              <img src="assets/sito-codifica-mobile-first-musica.webp" class="projects-img"
+                alt="design del sito musicale, mobile-first, codificato in codice puro" />
             </div>
             <div class="card projects-card item wordpress mobil">
-              <img src="assets/sito-wordpress-mobile-first-dischi-in-vinile.webp" class="projects-img" alt="design del sito per musica e vinili, mobile-first, codificato per WordPress con tema e modello" />
+              <img src="assets/sito-wordpress-mobile-first-dischi-in-vinile.webp" class="projects-img"
+                alt="design del sito per musica e vinili, mobile-first, codificato per WordPress con tema e modello" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="assets/sito-codifica-mobile-first-fioraia.webp" class="projects-img" alt="design del sito per un fioraio, mobile-first, codificato in codice puro" />
+              <img src="assets/sito-codifica-mobile-first-fioraia.webp" class="projects-img"
+                alt="design del sito per un fioraio, mobile-first, codificato in codice puro" />
             </div>
             <div class="card projects-card item wordpress mobil">
-              <img src="assets/sito-wordpress-mobile-first-cantante.webp" class="projects-img" alt="codificato per WordPress con tema e modello" />
+              <img src="assets/sito-wordpress-mobile-first-cantante.webp" class="projects-img"
+                alt="codificato per WordPress con tema e modello" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="assets/sito-codifica-mobile-first-festival.webp" class="projects-img" alt="design del sito per un festival, mobile-first, codificato in codice puro" />
+              <img src="assets/sito-codifica-mobile-first-festival.webp" class="projects-img"
+                alt="design del sito per un festival, mobile-first, codificato in codice puro" />
             </div>
             <div class="card projects-card item coding mobil">
-              <img src="assets/sito-codifica-mobile-first-artigiana.webp" class="projects-img" alt="design del sito per una donna artigiana, mobile-first, codificato in codice puro" />
+              <img src="assets/sito-codifica-mobile-first-artigiana.webp" class="projects-img"
+                alt="design del sito per una donna artigiana, mobile-first, codificato in codice puro" />
             </div>
           </div>
         </div>
@@ -377,7 +415,11 @@
                       <h4>
                         Maria <span>spagna</span></h4>
                       <p class="testimonials-description">
-                        Avendo problemi sul mio sito e non riuscendo da sola a migliorare l'esperienza degli utenti che lo visitano, ho cercato aiuto. Emanuela mi ha pazientemente offerto il suo aiuto, prendendosi il tempo di ascoltare e prendere in considerazione tutte le mie aspettative. Non ho parole per il tempo che ha dedicato e la sua gentilezza. Sono molto grata e sorpresa dalla facilità con cui sembra gestire tutto questo.
+                        Avendo problemi sul mio sito e non riuscendo da sola a migliorare l'esperienza degli utenti che
+                        lo visitano, ho cercato aiuto. Emanuela mi ha pazientemente offerto il suo aiuto, prendendosi il
+                        tempo di ascoltare e prendere in considerazione tutte le mie aspettative. Non ho parole per il
+                        tempo che ha dedicato e la sua gentilezza. Sono molto grata e sorpresa dalla facilità con cui
+                        sembra gestire tutto questo.
                       </p>
                       <div class="quote">
                         <img src="assets/virgolette.webp" alt="Doppi apici aperti per la citazione della testimonianza"
@@ -392,7 +434,11 @@
                       <h4>
                         Cynthia <span>francia</span></h4>
                       <p class="testimonials-description">
-                        Programmatrice molto professionale, che mette il cuore nel lavoro e che è riuscita a rispondere a ogni mia richiesta, sforzandosi di fare del suo meglio e di essere sempre al massimo. Mai scoraggiata da un problema, va dritta al cuore per risolverlo al fine di rispettare al massimo il desiderio del suo cliente. Consiglio vivamente di lavorare con lei, ha l'umano a cuore e questo aggiunge solo un plus al suo lavoro!
+                        Programmatrice molto professionale, che mette il cuore nel lavoro e che è riuscita a rispondere
+                        a ogni mia richiesta, sforzandosi di fare del suo meglio e di essere sempre al massimo. Mai
+                        scoraggiata da un problema, va dritta al cuore per risolverlo al fine di rispettare al massimo
+                        il desiderio del suo cliente. Consiglio vivamente di lavorare con lei, ha l'umano a cuore e
+                        questo aggiunge solo un plus al suo lavoro!
                       </p>
                       <div class="quote">
                         <img src="assets/virgolette.webp" alt="Doppi apici aperti per la citazione della testimonianza"
@@ -438,12 +484,16 @@
     </section>
   </main>
   <footer>
-    <div class="footer">
-      <div class="footer-container">
-        <div class="content" data-lang="fr">
-          <div class="footer-description">
-            <p>Sviluppatrice web, freelance, sono un'artista del web indipendente. La mia determinazione, la mia creatività senza limiti e la mia ingegnosità senza fine trasformano ogni problema in apprendimento, ogni sfida in un'occasione per superarmi. Attraverso le righe di codice che scrivo, tesso la mia tela di competenza.</p>
-            <nav class="navbar__footer">
+    <div class="footer-container">
+      <div class="content" data-lang="it">
+        <div class="grid grid__8">
+          <div class="footer-description grid-col-span-5">
+            <p>Sviluppatrice web, freelance, sono un'artista del web indipendente. La mia determinazione, la mia
+              creatività senza limiti e la mia ingegnosità senza fine trasformano ogni problema in apprendimento, ogni
+              sfida in un'occasione per superarmi. Attraverso le righe di codice che scrivo, tesso la mia tela di
+              competenza.</p>
+            <nav class="navbar__footer"
+            aria-label="Pulsanti riferiti ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invia email - Parte inferiore del sito">
               <ul class="flex start__content">
                 <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer" aria-label="Vai al profilo Github di Emanuela PL"><i
@@ -456,8 +506,8 @@
                 <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer"
                     aria-label="Vai al profilo Instagram di Emanuela PL"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=IL MIO ARTE"
-                    class="btn btn__radius btn__round" aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i
+                <li><a class="btn btn__radius btn__round emailLink" 
+                  aria-label="Invia una mail a Emanuela PALAZZO LACANFORA"><i
                       class="fa-solid fa-envelope"></i></a></li>
               </ul>
             </nav>
@@ -469,6 +519,7 @@
               <li><a href="#chisono">Chi sono?</a></li>
               <li><a href="#impegni">Impegni</a></li>
               <li><a href="#servizi">Servizi</a></li>
+              <li><a href="/">Avviso legale</a></li>
             </ul>
           </div>
           <div class="site-menu">
@@ -479,21 +530,23 @@
               <li><a href="#correlato">Correlato</a></li>
               <li><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank" rel="noopener" rel="noreferrer"
                   aria-label="Contattare Emanuela Palazzo Lacanfora su WhatsApp">Contattami</a></li>
+              <li><a href="/">CGV</a></li>
             </ul>
           </div>
-          <a href="#buogiorno" class="back-to-top"><i class="fa-regular fa-circle-up"
+          <a href="/" class="back-to-top"><i class="fa-regular fa-circle-up"
               aria-label="Torna in cima alla pagina"></i></a>
-          <div class="copyright">
+          <div class="copyright grid-col-span-8">
             <small>&copy;2024 Emanuela Palazzo Lacanfora. All rights reserved.</small>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <script src="../js/cookie-banner.js"></script>
   <script src="../js/burger.js"></script>
   <script src="../js/burger-menu.js"></script>
-  <script src="../js/filter.js"></script>
+  <script src="../js/cookies.js"></script>
+  <script src="js/email.js"></script>
+  <script defer src="../js/filter.js"></script>
   <script defer src="../js/testimonials.js"></script>
 </body>
 
