@@ -60,7 +60,7 @@ i {
 }
 
 .btn i {
-  color: var(--secondary-color);
+  color: var(--primary-color-light);
 }
 
 .navbar__footer i {
