@@ -2,15 +2,31 @@
 <html lang="en" itemscope itemtype="http://schema.org/WebPage" rel="profile" href="http://gmpg.org/xfn/11">
 <head>
     <meta charset="UTF-8">
+    <!-- Balise de méta avec la directive Content-Security-Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self' mailto:;
+  style-src 'self' 'unsafe-inline' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+  script-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it https://kit.fontawesome.com 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com;
+  img-src 'self' https://emanuelapalazzolacanfora.github.io https://emanuelapalazzolacanfora.github.io/fr https://emanuelapalazzolacanfora.github.io/en https://emanuelapalazzolacanfora.github.io/it;
+  connect-src 'self' https://emanuelapalazzolacanfora.github.io https://www.google-analytics.com https://ka-f.fontawesome.com https://api.daily-guard.net https://region1.google-analytics.com;
+  object-src 'none';
+  font-src 'self' https://kit.fontawesome.com https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://ka-f.fontawesome.com;
+">
+
+  <!-- Tags viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello, I'm a dedicated web developer with a creative touch, transforming lines of code into memorable online experiences. My journey in the digital field started with simple curiosity and evolved into a true passion. I craft custom interactive websites with creativity and ingenuity.">
-    <meta name="keywords" content="web developer, creativity, online experiences, front-end development, back-end development, interactive websites">
+
+    <!-- Tags (SEO) -->
+    <meta name="description" 
+    content="Hello, I'm a dedicated web developer with a creative touch, transforming lines of code into memorable online experiences. My journey in the digital field started with simple curiosity and evolved into a true passion. I craft custom interactive websites with creativity and ingenuity.">
+    <meta name="keywords" 
+    content="web developer, creativity, online experiences, front-end development, back-end development, interactive websites">
     <meta name="author" content="Emanuela Palazzo Lacanfora">
 
     <!-- Open Graph Tags for Social Media -->
     <meta property="og:title" content="Creative Web Developer">
     <meta property="og:description" content="I transform lines of code into memorable online experiences. I craft custom websites with creativity and ingenuity.">
-    <meta property="og:url" content="Your_site_URL">
+    <meta property="og:url" content="https://emanuelapalazzolacanfora.github.io/it/index_it">
     <meta property="og:image" content="URL_of_your_site_representative_image.jpg">
 
     <!-- Twitter Card Tags for Twitter -->
@@ -29,9 +45,11 @@
     <link rel="stylesheet" href="styles_en.css" />
 
     <!-- Canonical Link Tag -->
-    <link rel="canonical" href="Canonical_URL_of_your_page">
+  <link rel="canonical" href="https://emanuelapalazzolacanfora.github.io/en/index_en#hello" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/fr/index_fr#bonjour" hreflang="fr" />
+  <link rel="alternate" href="https://emanuelapalazzolacanfora.github.io/it/index_it#buongiorno" hreflang="it" />
 
-    <!-- Font Awesome -->
+  <!-- Font Awesome -->
 
     <script src="https://kit.fontawesome.com/98321ca9ae.js" crossorigin="anonymous"></script>
 
@@ -51,43 +69,22 @@
         gtag('js', new Date());
         gtag('config', 'YOUR_ANALYTICS_ID');
     </script>
-
-    <!-- Styles for Cookie Consent Banner -->
-    <style>
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background: var(--primary-color-dark);
-            text-align: center;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-
-        .cookie-banner button {
-            background: var(--secondary-color);
-            border: none;
-            margin: 0 0.56rem;
-            padding: 8px 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <!-- Cookie Consent Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <p>We use cookies to enhance your experience on our site. By continuing, you agree to our use of cookies.</p>
-         <!-- Privacy Policy Link -->
-    <p>Check out our <a href="path/to/your_privacy_policy.html" target="_blank">Privacy Policy</a> for more information.</p>
-
-    <button type="submit" onclick="acceptCookies()">I Accept</button>
+        <button type="submit" onclick="acceptCookies()">I Accept</button>
+        <button type="submit" onclick="rejectCookies()">I Refuse</button>
+        <!-- Privacy Policy Link -->
+    <p>Check out our <a href="path/to/your_privacy_policy.html" target="_blank">
+      Privacy Policy</a> for more information.</p>
     </div>
   <header>
     <div class="header-container">
       <div class="content" data-lang="en">
-        <nav class="navbar flex">
+        <nav class="navbar flex"
+        aria-label="Intestazione della barra di navigazione del sito della sviluppatrice web Emanuela Palazzo Lacanfora"></nav>
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -109,7 +106,8 @@
             </li>
           </ul>
         </nav>
-        <nav id="language-selector" class="lang-selector">
+        <nav id="language-selector" class="lang-selector"
+        aria-label="Selettore lingua (francese, inglese, italiano) per il sito web della sviluppatrice web Emanuela Palazzo Lacanfora">
           <ul class="flex">
             <li class="btn"><a href="../fr/index_fr.html" onclick="changeLanguage('fr')">Fr</a></li>
             <li class="btn"><a href="../en/index_en.html" onclick="changeLanguage('en')">En</a></li>
@@ -120,7 +118,8 @@
     </div>
   </header>
   <main>
-    <nav class="navbar__socials">
+    <nav class="navbar__socials"
+    aria-label="Pulsanti riferiti ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invia email - Inizio sito">
       <ul>
         <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Visit Emanuela PL's Github account"><i class="fa-brands fa-github"></i></a>
@@ -131,8 +130,9 @@
         <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn" target="_blank" rel="noopener"
             rel="noreferrer" aria-label="Visit Emanuela PL's Instagram account"><i
               class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MY ART" class="btn"
-            aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a class="btn emailLink"
+            aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i 
+            class="fa-solid fa-envelope"></i></a></li>
       </ul>
     </nav>
     <section id="hello">
@@ -259,7 +259,8 @@
               new techniques, which I continuously learn.
 
             </p>
-            <nav class="navbar__whoiam">
+            <nav class="navbar__whoiam"
+            aria-label="Accesso al curriculum + Pulsanti per il collegamento ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invio email - Centro del sito">
               <ul class="flex">
                 <li><a href="https://emanuelapalazzolacanfora.github.io/curiculumvitae" rel="noopener" rel="noreferrer"
                     aria-label="Link to the resume of Emanuela Palazzo Lacanfora" class="btn btn__radius">
@@ -275,7 +276,7 @@
                 <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer"
                     aria-label="Go to Emanuela PL's Instagram profile"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MY ART" class="btn btn__radius btn__round"
+                <li><a class="btn btn__radius btn__round emailLink"
                     aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i class="fa-solid fa-envelope"></i></a>
                 </li>
               </ul>
@@ -360,10 +361,10 @@
 
             </p>
             <div class="projects-menu flex">
-              <button class="btn btn__radius projects-btn btn__active" onclick="filterItems('all')">all</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('mobil')">mobil first</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('wordpress')">wordpress</button>
-              <button class="btn btn__radius projects-btn" onclick="filterItems('coding')">coding</button>
+              <button type="button" class="btn btn__radius projects-btn btn__active" onclick="filterItems('all')">all</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('mobil')">mobil first</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('wordpress')">wordpress</button>
+              <button type="button" class="btn btn__radius projects-btn" onclick="filterItems('coding')">coding</button>
               <!-- Ajoutez plus de boutons selon vos besoins -->
             </div>
           </header>
@@ -473,15 +474,16 @@
     </section>
   </main>
   <footer>
-    <div class="footer">
-      <div class="footer-container">
-        <div class="content" data-lang="en">
-          <div class="footer-description">
+    <div class="footer-container">
+      <div class="content" data-lang="en">
+        <div class="grid grid__8">
+          <div class="footer-description grid-col-span-5">
             <p>Web developer, freelancer, I am an independent web artist. My determination, limitless creativity, and
               endless ingenuity transform every bug into learning, every challenge into an opportunity to excel. Through
               the lines of code I write, I weave my tapestry of expertise.
             </p>
-            <nav class="navbar__footer">
+            <nav class="navbar__footer"
+             aria-label="Pulsanti riferiti ai social network della sviluppatrice web Emanuela Palazzo Lacanfora. + Invia email - Parte inferiore del sito">
               <ul class="flex start__content">
                 <li><a href="https://github.com/emanuelapalazzolacanfora" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer" aria-label="Go to Emanuela PL's Github profile"><i
@@ -493,19 +495,19 @@
                 <li><a href="https://www.instagram.com/emanuelapalazzolacanfora/" class="btn btn__radius btn__round"
                     target="_blank" rel="noopener" rel="noreferrer"
                     aria-label="Go to Emanuela PL's Instagram profile"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:emanuela.palazzo.lacanfora@gmail.com?subject=MY ART"
-                    class="btn btn__radius btn__round" aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i
+                <li><a class="btn btn__radius btn__round emailLink" aria-label="Send an email to Emanuela PALAZZO LACANFORA"><i
                       class="fa-solid fa-envelope"></i></a></li>
               </ul>
             </nav>
           </div>
-          <div class="site-menu">
+          <div class="site-menu grid-col-span-2 ">
             <!-- Menu du site / Plan du site ici -->
             <ul>
               <li><a href="#hello">Hello</a></li>
               <li><a href="#commitments">Commitments</a></li>
               <li><a href="#whoiam">Who am I?</a></li>
               <li><a href="#services">Services</a></li>
+              <li><a href="/">Legale Notices</a></li>
             </ul>
           </div>
           <div class="site-menu">
@@ -516,21 +518,23 @@
               <li><a href="#Related">Related</a></li>
               <li><a href="https://wa.me/message/BKIHIHIQSKPDB1" target="_blank" rel="noopener"
                   rel="noreferrer">Contact</a></li>
+              <li><a href="/">GTC</a></li>
             </ul>
           </div>
-          <a href="#hello" class="back-to-top"><i class="fa-regular fa-circle-up"
+          <a href="/" class="back-to-top"><i class="fa-regular fa-circle-up"
               aria-label="Back to the top of the page"></i></a></i></a>
-          <div class="copyright">
+          <div class="copyright grid-col-span-8">
             <small>&copy;2024 Emanuela Palazzo Lacanfora. All rights reserved.</small>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <script src="../js/cookie-banner.js"></script>
   <script src="../js/burger.js"></script>
   <script src="../js/burger-menu.js"></script>
-  <script src="../js/filter.js"></script>
+  <script src="../js/cookies.js"></script>
+  <script src="js/email.js"></script>
+  <script defer src="../js/filter.js"></script>
   <script defer src="../js/testimonials.js"></script>
 </body>
 
