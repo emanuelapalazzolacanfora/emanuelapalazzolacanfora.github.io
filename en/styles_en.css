@@ -939,14 +939,14 @@ footer {
   }
 }
 
-@media screen and (min-width:940px) {
+@media screen and (min-width: 940px) {
   #values h3 {
     font-size: 3rem;
   }
 
 }
 
-@media screen and (min-width:980px) {
+@media screen and (min-width: 980px) {
   header .navbar.flex {
     gap: 0.84rem;
   }
@@ -957,7 +957,7 @@ footer {
   }
 }
 
-@media screen and (min-width:1030px) {
+@media screen and (min-width: 1030px) {
   #hello {
     height: 100vh;
     padding-top: 110px;
