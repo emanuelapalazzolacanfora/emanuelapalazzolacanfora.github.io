@@ -925,24 +925,16 @@ footer {
     min-width: 50%;
   }
 
-  .footer-description,
-  .social-buttons,
-  .back-to-top {
-    float: left;
+  .footer-description P {
+    padding: 0 1.1rem 0 0;
   }
 
-  .footer-description {
-    width: 60%;
-  }
-
-  .site-menu {
-    float: left;
-    margin-right: 0;
-    width: 15%;
+  .grid-col-span-2{
+    grid-column: span 2 ;
   }
 
   .back-to-top {
-    position: unset;
+    top:-84px;
     font-size: 3.2rem;
   }
 }
