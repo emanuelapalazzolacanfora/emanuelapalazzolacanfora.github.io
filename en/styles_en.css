@@ -441,7 +441,7 @@ main {
   position: unset;
   width: 100%;
   margin-bottom: 2rem;
-  color: var(--text-light);
+  color: var(--primary-color-light);
 }
 
 .hello-link {
@@ -510,7 +510,7 @@ main {
   font-family: var(--basic-font), sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
-  color: var(--text-light);
+  color: var(--primary-color-light);
   text-align: justify;
 }
 
@@ -711,7 +711,7 @@ header.projects-header.flex {
   border: none;
   background-color: transparent;
   font-size: 50px;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   cursor: pointer;
 }
 
