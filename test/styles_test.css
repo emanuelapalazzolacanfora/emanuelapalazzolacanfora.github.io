@@ -199,7 +199,7 @@ nav.navbar__footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color-light);
   position: absolute;
   z-index: 99;
 }
