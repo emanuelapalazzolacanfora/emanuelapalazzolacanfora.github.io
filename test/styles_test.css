@@ -10,6 +10,7 @@
   --secondary-color: #60713a;
   --secondary-color-dark: #434f29;
   --text-dark: #1f1e1e;
+  --text-light:#F5E7CC;
   --white: #ffffff;
   --max-width: 1200px;
   --basic-size: 16px;
@@ -162,10 +163,10 @@ button i {
   border-radius: 100%;
 }
 
-.projects-header .btn,
-.navbar__footer .btn__round {
-  background-color: var(--secondary-color-light);
+.projects-header .btn {
+  background-color: var(--secondary-color-dark);
   background-image: none;
+  color: var(--text-light);
 }
 
 .projects-header .btn:hover {
@@ -177,6 +178,10 @@ button i {
   background-image: var(--gradient);
 }
 
+.navbar__footer .btn__round {
+  background-color: var(--secondary-color-light);
+  background-image: none;
+}
 .navbar__footer .btn__round:hover {
   color: var(--secondary-color);
   background-image: var(--gradient);
@@ -635,7 +640,7 @@ header.projects-header.flex {
   margin-bottom: 1.1rem;
   font-family: 'Bitter';
   font-size: 2.3rem;
-  color: var(--secondary-color-light);
+  color: var(--text-light);
   text-align: center;
 }
 
@@ -738,7 +743,7 @@ footer {
 
 .footer-description p {
   font-size: 0.75rem;
-  color: var(--white);
+  color: var(--text-light);
 }
 
 .social-buttons {
@@ -777,6 +782,7 @@ footer {
 .copyright {
   clear: both;
   margin-top: 20px;
+  color: var(--white);
 }
 
 @media screen and (min-width: 300px) {
