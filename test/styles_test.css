@@ -454,14 +454,16 @@ main {
   justify-content: center;
   align-items: center;
   margin-block: 0;
-  height: 100px;
+  height: 150px;
+  margin: 0.5rem 0;
   font-family: bitter;
   font-size: 3rem;
 }
 
 .card__values {
   position: absolute;
-  height: 130px;
+  height: 150px;
+  margin: 0.5rem 0;
   padding: 0.5rem;
   background-color: var(--secondary-color-dark);
   opacity: 0;
@@ -893,9 +895,16 @@ footer {
   }
 
   #values h3 {
+    height: 100px;
+    margin: 0;
     font-size: 2rem;
   }
-
+  
+  .card__values {
+    height: 130px;
+    margin: 0;
+  }
+  
   .carousel-item {
     min-width: 50%;
   }
