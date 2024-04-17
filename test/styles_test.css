@@ -584,6 +584,10 @@ main {
 }
 
 /* PROJECTS */
+#projets, #avis {
+    padding-top: 40px;
+}
+
 #projets header{
   background: transparent;
 }
