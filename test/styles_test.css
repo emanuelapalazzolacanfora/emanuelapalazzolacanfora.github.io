@@ -552,9 +552,9 @@ main {
 #services .card {
   position: relative;
   display: block;
-  padding: 2rem;
-  padding-top: 3rem;
-  text-align: center;
+  padding: 0.5rem 1rem;
+  padding-top: 2rem;
+  text-align: left;
 }
 
 #services .card span {
