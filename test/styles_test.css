@@ -546,7 +546,7 @@ main {
 }
 
 #services .grid {
-  gap: 2rem 1rem;
+  gap: 3rem 1rem;
 }
 
 #services .card {
@@ -574,6 +574,10 @@ main {
 #services .card:hover span {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+
+p.services_description {
+    font-size: 0.92rem;
 }
 
 /* PROJECTS */
