@@ -649,6 +649,7 @@ header.projects-header.flex {
 }
 
 #avis h4 span {
+  display: inline;
   font-family: "Poppins", sans-serif;
   font-size: 0.84rem;
   font-weight: 400;
